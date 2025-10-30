@@ -1,0 +1,49 @@
+<!-- /sim/world_with_ground.sdf -->
+<sdf version="1.9">
+  <world name="default">
+    <gravity>0 0 -9.81</gravity>
+
+    <!-- Simple sun -->
+    <light name="sun" type="directional">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <direction>-0.5 0.5 -1</direction>
+      <diffuse>1 1 1 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+    </light>
+
+    <!-- Ground plane -->
+    <model name="ground">
+      <static>true</static>
+      <link name="ground_link">
+        <collision name="ground_col">
+          <geometry>
+            <plane><normal>0 0 1</normal><size>200 200</size></plane>
+          </geometry>
+        </collision>
+        <visual name="ground_vis">
+          <geometry>
+            <plane><normal>0 0 1</normal><size>200 200</size></plane>
+          </geometry>
+          <material>
+          
+                  <ambient>1 1 1 1</ambient>
+        <diffuse>1 1 1 1</diffuse>
+        <specular>0.1 0.1 0.1 1</specular>
+        <emissive>0 0 0 1</emissive>
+
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Include YOUR model from the mounted folder -->
+    <include>
+
+   <uri>file:///sim/mesh/spring_damper_mesh.sdf</uri>
+      <!-- optional: place it -->
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+  </world>
+</sdf>
+

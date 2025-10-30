@@ -1,0 +1,129 @@
+<sdf version="1.7">
+  <model name="sd_mesh">
+    <static>false</static>
+    <link name="mass_x0_y0">
+      <inertial>
+        <pose>0.0 0.0 0 0 0 0</pose>
+        <mass>5.025</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyx>0</iyx>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izx>0</izx>
+          <izy>0</izy>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x0_y0">
+        <geometry>
+          <sphere>
+            <radius>0.03</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x0_y0">
+        <geometry>
+          <sphere>
+            <radius>0.03</radius>
+          </sphere>
+        </geometry>
+      </visual>
+    </link>
+    <link name="mass_x1_y0">
+      <inertial>
+        <pose>0.4 0.0 0 0 0 0</pose>
+        <mass>5.025</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyx>0</iyx>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izx>0</izx>
+          <izy>0</izy>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x1_y0">
+        <geometry>
+          <sphere>
+            <radius>0.03</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x1_y0">
+        <geometry>
+          <sphere>
+            <radius>0.03</radius>
+          </sphere>
+        </geometry>
+      </visual>
+    </link>
+    <link name="mass_x0_y1">
+      <inertial>
+        <pose>0.0 0.4 0 0 0 0</pose>
+        <mass>5.025</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyx>0</iyx>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izx>0</izx>
+          <izy>0</izy>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x0_y1">
+        <geometry>
+          <sphere>
+            <radius>0.03</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x0_y1">
+        <geometry>
+          <sphere>
+            <radius>0.03</radius>
+          </sphere>
+        </geometry>
+      </visual>
+    </link>
+    <link name="mass_x1_y1">
+      <inertial>
+        <pose>0.4 0.4 0 0 0 0</pose>
+        <mass>5.025</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyx>0</iyx>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izx>0</izx>
+          <izy>0</izy>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x1_y1">
+        <geometry>
+          <sphere>
+            <radius>0.03</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x1_y1">
+        <geometry>
+          <sphere>
+            <radius>0.03</radius>
+          </sphere>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
