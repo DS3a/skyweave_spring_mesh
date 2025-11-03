@@ -2,18 +2,15 @@
   <model name="spring_damper_mesh">
     <static>false</static>
     <link name="mass_x0_y0">
+      <pose>0.0 0.0 0 0 0 0</pose>
       <inertial>
-        <pose>0.0 0.0 0 0 0 0</pose>
         <mass>5.025</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyx>0</iyx>
           <iyy>1e-5</iyy>
           <iyz>0</iyz>
-          <izx>0</izx>
-          <izy>0</izy>
           <izz>1e-5</izz>
         </inertia>
       </inertial>
@@ -31,32 +28,17 @@
           </sphere>
         </geometry>
       </visual>
-      <frame name="m_x0_y0_N" attached_to="mass_x0_y0">
-        <pose relative_to="mass_x0_y0">0 0 0 0 0 0</pose>
-      </frame>
-      <frame name="m_x0_y0_W" attached_to="mass_x0_y0">
-        <pose relative_to="mass_x0_y0">0 0 0 0 0 1.5707963267948966</pose>
-      </frame>
-      <frame name="m_x0_y0_S" attached_to="mass_x0_y0">
-        <pose relative_to="mass_x0_y0">0 0 0 0 0 3.141592653589793</pose>
-      </frame>
-      <frame name="m_x0_y0_E" attached_to="mass_x0_y0">
-        <pose relative_to="mass_x0_y0">0 0 0 0 0 -1.5707963267948966</pose>
-      </frame>
     </link>
     <link name="mass_x1_y0">
+      <pose>0.4 0.0 0 0 0 0</pose>
       <inertial>
-        <pose>0.4 0.0 0 0 0 0</pose>
         <mass>5.025</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyx>0</iyx>
           <iyy>1e-5</iyy>
           <iyz>0</iyz>
-          <izx>0</izx>
-          <izy>0</izy>
           <izz>1e-5</izz>
         </inertia>
       </inertial>
@@ -74,32 +56,17 @@
           </sphere>
         </geometry>
       </visual>
-      <frame name="m_x1_y0_N" attached_to="mass_x1_y0">
-        <pose relative_to="mass_x1_y0">0 0 0 0 0 0</pose>
-      </frame>
-      <frame name="m_x1_y0_W" attached_to="mass_x1_y0">
-        <pose relative_to="mass_x1_y0">0 0 0 0 0 1.5707963267948966</pose>
-      </frame>
-      <frame name="m_x1_y0_S" attached_to="mass_x1_y0">
-        <pose relative_to="mass_x1_y0">0 0 0 0 0 3.141592653589793</pose>
-      </frame>
-      <frame name="m_x1_y0_E" attached_to="mass_x1_y0">
-        <pose relative_to="mass_x1_y0">0 0 0 0 0 -1.5707963267948966</pose>
-      </frame>
     </link>
     <link name="mass_x0_y1">
+      <pose>0.0 0.4 0 0 0 0</pose>
       <inertial>
-        <pose>0.0 0.4 0 0 0 0</pose>
         <mass>5.025</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyx>0</iyx>
           <iyy>1e-5</iyy>
           <iyz>0</iyz>
-          <izx>0</izx>
-          <izy>0</izy>
           <izz>1e-5</izz>
         </inertia>
       </inertial>
@@ -117,32 +84,17 @@
           </sphere>
         </geometry>
       </visual>
-      <frame name="m_x0_y1_N" attached_to="mass_x0_y1">
-        <pose relative_to="mass_x0_y1">0 0 0 0 0 0</pose>
-      </frame>
-      <frame name="m_x0_y1_W" attached_to="mass_x0_y1">
-        <pose relative_to="mass_x0_y1">0 0 0 0 0 1.5707963267948966</pose>
-      </frame>
-      <frame name="m_x0_y1_S" attached_to="mass_x0_y1">
-        <pose relative_to="mass_x0_y1">0 0 0 0 0 3.141592653589793</pose>
-      </frame>
-      <frame name="m_x0_y1_E" attached_to="mass_x0_y1">
-        <pose relative_to="mass_x0_y1">0 0 0 0 0 -1.5707963267948966</pose>
-      </frame>
     </link>
     <link name="mass_x1_y1">
+      <pose>0.4 0.4 0 0 0 0</pose>
       <inertial>
-        <pose>0.4 0.4 0 0 0 0</pose>
         <mass>5.025</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyx>0</iyx>
           <iyy>1e-5</iyy>
           <iyz>0</iyz>
-          <izx>0</izx>
-          <izy>0</izy>
           <izz>1e-5</izz>
         </inertia>
       </inertial>
@@ -160,18 +112,6 @@
           </sphere>
         </geometry>
       </visual>
-      <frame name="m_x1_y1_N" attached_to="mass_x1_y1">
-        <pose relative_to="mass_x1_y1">0 0 0 0 0 0</pose>
-      </frame>
-      <frame name="m_x1_y1_W" attached_to="mass_x1_y1">
-        <pose relative_to="mass_x1_y1">0 0 0 0 0 1.5707963267948966</pose>
-      </frame>
-      <frame name="m_x1_y1_S" attached_to="mass_x1_y1">
-        <pose relative_to="mass_x1_y1">0 0 0 0 0 3.141592653589793</pose>
-      </frame>
-      <frame name="m_x1_y1_E" attached_to="mass_x1_y1">
-        <pose relative_to="mass_x1_y1">0 0 0 0 0 -1.5707963267948966</pose>
-      </frame>
     </link>
     <joint name="test_joint" type="revolute">
       <parent>mass_x0_y0</parent>
@@ -179,6 +119,7 @@
       <axis>
         <xyz>0 1 0</xyz>
       </axis>
+      <pose>-0.2 0 0 0 0 0</pose>
     </joint>
   </model>
 </sdf>
