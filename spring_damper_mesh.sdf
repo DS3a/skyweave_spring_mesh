@@ -2811,25 +2811,9 @@
       <child>mass_x0_y1</child>
       <pose relative_to="mass_x0_y1">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="NW_x0_y0_to_x1_y1" type="revolute">
+    <joint name="NW_x0_y0_to_x1_y1" type="ball">
       <parent>mass_x0_y0</parent>
       <child>mass_x1_y1</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x1_y1">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x1_y0_to_x2_y0" type="ball">
@@ -2842,46 +2826,14 @@
       <child>mass_x1_y1</child>
       <pose relative_to="mass_x1_y1">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x1_y0_to_x0_y1" type="revolute">
+    <joint name="SW_x1_y0_to_x0_y1" type="ball">
       <parent>mass_x1_y0</parent>
       <child>mass_x0_y1</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x0_y1">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x1_y0_to_x2_y1" type="revolute">
+    <joint name="NW_x1_y0_to_x2_y1" type="ball">
       <parent>mass_x1_y0</parent>
       <child>mass_x2_y1</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x2_y1">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x2_y0_to_x3_y0" type="ball">
@@ -2894,46 +2846,14 @@
       <child>mass_x2_y1</child>
       <pose relative_to="mass_x2_y1">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x2_y0_to_x1_y1" type="revolute">
+    <joint name="SW_x2_y0_to_x1_y1" type="ball">
       <parent>mass_x2_y0</parent>
       <child>mass_x1_y1</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x1_y1">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x2_y0_to_x3_y1" type="revolute">
+    <joint name="NW_x2_y0_to_x3_y1" type="ball">
       <parent>mass_x2_y0</parent>
       <child>mass_x3_y1</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x3_y1">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x3_y0_to_x4_y0" type="ball">
@@ -2946,46 +2866,14 @@
       <child>mass_x3_y1</child>
       <pose relative_to="mass_x3_y1">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x3_y0_to_x2_y1" type="revolute">
+    <joint name="SW_x3_y0_to_x2_y1" type="ball">
       <parent>mass_x3_y0</parent>
       <child>mass_x2_y1</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x2_y1">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x3_y0_to_x4_y1" type="revolute">
+    <joint name="NW_x3_y0_to_x4_y1" type="ball">
       <parent>mass_x3_y0</parent>
       <child>mass_x4_y1</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x4_y1">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x4_y0_to_x5_y0" type="ball">
@@ -2998,46 +2886,14 @@
       <child>mass_x4_y1</child>
       <pose relative_to="mass_x4_y1">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x4_y0_to_x3_y1" type="revolute">
+    <joint name="SW_x4_y0_to_x3_y1" type="ball">
       <parent>mass_x4_y0</parent>
       <child>mass_x3_y1</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x3_y1">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x4_y0_to_x5_y1" type="revolute">
+    <joint name="NW_x4_y0_to_x5_y1" type="ball">
       <parent>mass_x4_y0</parent>
       <child>mass_x5_y1</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x5_y1">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x5_y0_to_x6_y0" type="ball">
@@ -3050,46 +2906,14 @@
       <child>mass_x5_y1</child>
       <pose relative_to="mass_x5_y1">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x5_y0_to_x4_y1" type="revolute">
+    <joint name="SW_x5_y0_to_x4_y1" type="ball">
       <parent>mass_x5_y0</parent>
       <child>mass_x4_y1</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x4_y1">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x5_y0_to_x6_y1" type="revolute">
+    <joint name="NW_x5_y0_to_x6_y1" type="ball">
       <parent>mass_x5_y0</parent>
       <child>mass_x6_y1</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x6_y1">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x6_y0_to_x7_y0" type="ball">
@@ -3102,46 +2926,14 @@
       <child>mass_x6_y1</child>
       <pose relative_to="mass_x6_y1">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x6_y0_to_x5_y1" type="revolute">
+    <joint name="SW_x6_y0_to_x5_y1" type="ball">
       <parent>mass_x6_y0</parent>
       <child>mass_x5_y1</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x5_y1">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x6_y0_to_x7_y1" type="revolute">
+    <joint name="NW_x6_y0_to_x7_y1" type="ball">
       <parent>mass_x6_y0</parent>
       <child>mass_x7_y1</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x7_y1">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x7_y0_to_x8_y0" type="ball">
@@ -3154,46 +2946,14 @@
       <child>mass_x7_y1</child>
       <pose relative_to="mass_x7_y1">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x7_y0_to_x6_y1" type="revolute">
+    <joint name="SW_x7_y0_to_x6_y1" type="ball">
       <parent>mass_x7_y0</parent>
       <child>mass_x6_y1</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x6_y1">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x7_y0_to_x8_y1" type="revolute">
+    <joint name="NW_x7_y0_to_x8_y1" type="ball">
       <parent>mass_x7_y0</parent>
       <child>mass_x8_y1</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x8_y1">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x8_y0_to_x9_y0" type="ball">
@@ -3206,46 +2966,14 @@
       <child>mass_x8_y1</child>
       <pose relative_to="mass_x8_y1">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x8_y0_to_x7_y1" type="revolute">
+    <joint name="SW_x8_y0_to_x7_y1" type="ball">
       <parent>mass_x8_y0</parent>
       <child>mass_x7_y1</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x7_y1">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x8_y0_to_x9_y1" type="revolute">
+    <joint name="NW_x8_y0_to_x9_y1" type="ball">
       <parent>mass_x8_y0</parent>
       <child>mass_x9_y1</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x9_y1">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="W_x9_y0_to_x9_y1" type="ball">
@@ -3253,25 +2981,9 @@
       <child>mass_x9_y1</child>
       <pose relative_to="mass_x9_y1">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x9_y0_to_x8_y1" type="revolute">
+    <joint name="SW_x9_y0_to_x8_y1" type="ball">
       <parent>mass_x9_y0</parent>
       <child>mass_x8_y1</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x8_y1">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
     <joint name="N_x0_y1_to_x1_y1" type="ball">
@@ -3284,25 +2996,9 @@
       <child>mass_x0_y2</child>
       <pose relative_to="mass_x0_y2">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="NW_x0_y1_to_x1_y2" type="revolute">
+    <joint name="NW_x0_y1_to_x1_y2" type="ball">
       <parent>mass_x0_y1</parent>
       <child>mass_x1_y2</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x1_y2">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x1_y1_to_x2_y1" type="ball">
@@ -3315,46 +3011,14 @@
       <child>mass_x1_y2</child>
       <pose relative_to="mass_x1_y2">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x1_y1_to_x0_y2" type="revolute">
+    <joint name="SW_x1_y1_to_x0_y2" type="ball">
       <parent>mass_x1_y1</parent>
       <child>mass_x0_y2</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x0_y2">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x1_y1_to_x2_y2" type="revolute">
+    <joint name="NW_x1_y1_to_x2_y2" type="ball">
       <parent>mass_x1_y1</parent>
       <child>mass_x2_y2</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x2_y2">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x2_y1_to_x3_y1" type="ball">
@@ -3367,46 +3031,14 @@
       <child>mass_x2_y2</child>
       <pose relative_to="mass_x2_y2">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x2_y1_to_x1_y2" type="revolute">
+    <joint name="SW_x2_y1_to_x1_y2" type="ball">
       <parent>mass_x2_y1</parent>
       <child>mass_x1_y2</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x1_y2">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x2_y1_to_x3_y2" type="revolute">
+    <joint name="NW_x2_y1_to_x3_y2" type="ball">
       <parent>mass_x2_y1</parent>
       <child>mass_x3_y2</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x3_y2">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x3_y1_to_x4_y1" type="ball">
@@ -3419,46 +3051,14 @@
       <child>mass_x3_y2</child>
       <pose relative_to="mass_x3_y2">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x3_y1_to_x2_y2" type="revolute">
+    <joint name="SW_x3_y1_to_x2_y2" type="ball">
       <parent>mass_x3_y1</parent>
       <child>mass_x2_y2</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x2_y2">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x3_y1_to_x4_y2" type="revolute">
+    <joint name="NW_x3_y1_to_x4_y2" type="ball">
       <parent>mass_x3_y1</parent>
       <child>mass_x4_y2</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x4_y2">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x4_y1_to_x5_y1" type="ball">
@@ -3471,46 +3071,14 @@
       <child>mass_x4_y2</child>
       <pose relative_to="mass_x4_y2">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x4_y1_to_x3_y2" type="revolute">
+    <joint name="SW_x4_y1_to_x3_y2" type="ball">
       <parent>mass_x4_y1</parent>
       <child>mass_x3_y2</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x3_y2">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x4_y1_to_x5_y2" type="revolute">
+    <joint name="NW_x4_y1_to_x5_y2" type="ball">
       <parent>mass_x4_y1</parent>
       <child>mass_x5_y2</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x5_y2">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x5_y1_to_x6_y1" type="ball">
@@ -3523,46 +3091,14 @@
       <child>mass_x5_y2</child>
       <pose relative_to="mass_x5_y2">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x5_y1_to_x4_y2" type="revolute">
+    <joint name="SW_x5_y1_to_x4_y2" type="ball">
       <parent>mass_x5_y1</parent>
       <child>mass_x4_y2</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x4_y2">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x5_y1_to_x6_y2" type="revolute">
+    <joint name="NW_x5_y1_to_x6_y2" type="ball">
       <parent>mass_x5_y1</parent>
       <child>mass_x6_y2</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x6_y2">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x6_y1_to_x7_y1" type="ball">
@@ -3575,46 +3111,14 @@
       <child>mass_x6_y2</child>
       <pose relative_to="mass_x6_y2">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x6_y1_to_x5_y2" type="revolute">
+    <joint name="SW_x6_y1_to_x5_y2" type="ball">
       <parent>mass_x6_y1</parent>
       <child>mass_x5_y2</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x5_y2">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x6_y1_to_x7_y2" type="revolute">
+    <joint name="NW_x6_y1_to_x7_y2" type="ball">
       <parent>mass_x6_y1</parent>
       <child>mass_x7_y2</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x7_y2">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x7_y1_to_x8_y1" type="ball">
@@ -3627,46 +3131,14 @@
       <child>mass_x7_y2</child>
       <pose relative_to="mass_x7_y2">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x7_y1_to_x6_y2" type="revolute">
+    <joint name="SW_x7_y1_to_x6_y2" type="ball">
       <parent>mass_x7_y1</parent>
       <child>mass_x6_y2</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x6_y2">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x7_y1_to_x8_y2" type="revolute">
+    <joint name="NW_x7_y1_to_x8_y2" type="ball">
       <parent>mass_x7_y1</parent>
       <child>mass_x8_y2</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x8_y2">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x8_y1_to_x9_y1" type="ball">
@@ -3679,46 +3151,14 @@
       <child>mass_x8_y2</child>
       <pose relative_to="mass_x8_y2">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x8_y1_to_x7_y2" type="revolute">
+    <joint name="SW_x8_y1_to_x7_y2" type="ball">
       <parent>mass_x8_y1</parent>
       <child>mass_x7_y2</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x7_y2">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x8_y1_to_x9_y2" type="revolute">
+    <joint name="NW_x8_y1_to_x9_y2" type="ball">
       <parent>mass_x8_y1</parent>
       <child>mass_x9_y2</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x9_y2">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="W_x9_y1_to_x9_y2" type="ball">
@@ -3726,25 +3166,9 @@
       <child>mass_x9_y2</child>
       <pose relative_to="mass_x9_y2">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x9_y1_to_x8_y2" type="revolute">
+    <joint name="SW_x9_y1_to_x8_y2" type="ball">
       <parent>mass_x9_y1</parent>
       <child>mass_x8_y2</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x8_y2">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
     <joint name="N_x0_y2_to_x1_y2" type="ball">
@@ -3757,25 +3181,9 @@
       <child>mass_x0_y3</child>
       <pose relative_to="mass_x0_y3">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="NW_x0_y2_to_x1_y3" type="revolute">
+    <joint name="NW_x0_y2_to_x1_y3" type="ball">
       <parent>mass_x0_y2</parent>
       <child>mass_x1_y3</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x1_y3">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x1_y2_to_x2_y2" type="ball">
@@ -3788,46 +3196,14 @@
       <child>mass_x1_y3</child>
       <pose relative_to="mass_x1_y3">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x1_y2_to_x0_y3" type="revolute">
+    <joint name="SW_x1_y2_to_x0_y3" type="ball">
       <parent>mass_x1_y2</parent>
       <child>mass_x0_y3</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x0_y3">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x1_y2_to_x2_y3" type="revolute">
+    <joint name="NW_x1_y2_to_x2_y3" type="ball">
       <parent>mass_x1_y2</parent>
       <child>mass_x2_y3</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x2_y3">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x2_y2_to_x3_y2" type="ball">
@@ -3840,46 +3216,14 @@
       <child>mass_x2_y3</child>
       <pose relative_to="mass_x2_y3">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x2_y2_to_x1_y3" type="revolute">
+    <joint name="SW_x2_y2_to_x1_y3" type="ball">
       <parent>mass_x2_y2</parent>
       <child>mass_x1_y3</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x1_y3">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x2_y2_to_x3_y3" type="revolute">
+    <joint name="NW_x2_y2_to_x3_y3" type="ball">
       <parent>mass_x2_y2</parent>
       <child>mass_x3_y3</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x3_y3">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x3_y2_to_x4_y2" type="ball">
@@ -3892,46 +3236,14 @@
       <child>mass_x3_y3</child>
       <pose relative_to="mass_x3_y3">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x3_y2_to_x2_y3" type="revolute">
+    <joint name="SW_x3_y2_to_x2_y3" type="ball">
       <parent>mass_x3_y2</parent>
       <child>mass_x2_y3</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x2_y3">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x3_y2_to_x4_y3" type="revolute">
+    <joint name="NW_x3_y2_to_x4_y3" type="ball">
       <parent>mass_x3_y2</parent>
       <child>mass_x4_y3</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x4_y3">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x4_y2_to_x5_y2" type="ball">
@@ -3944,46 +3256,14 @@
       <child>mass_x4_y3</child>
       <pose relative_to="mass_x4_y3">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x4_y2_to_x3_y3" type="revolute">
+    <joint name="SW_x4_y2_to_x3_y3" type="ball">
       <parent>mass_x4_y2</parent>
       <child>mass_x3_y3</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x3_y3">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x4_y2_to_x5_y3" type="revolute">
+    <joint name="NW_x4_y2_to_x5_y3" type="ball">
       <parent>mass_x4_y2</parent>
       <child>mass_x5_y3</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x5_y3">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x5_y2_to_x6_y2" type="ball">
@@ -3996,46 +3276,14 @@
       <child>mass_x5_y3</child>
       <pose relative_to="mass_x5_y3">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x5_y2_to_x4_y3" type="revolute">
+    <joint name="SW_x5_y2_to_x4_y3" type="ball">
       <parent>mass_x5_y2</parent>
       <child>mass_x4_y3</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x4_y3">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x5_y2_to_x6_y3" type="revolute">
+    <joint name="NW_x5_y2_to_x6_y3" type="ball">
       <parent>mass_x5_y2</parent>
       <child>mass_x6_y3</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x6_y3">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x6_y2_to_x7_y2" type="ball">
@@ -4048,46 +3296,14 @@
       <child>mass_x6_y3</child>
       <pose relative_to="mass_x6_y3">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x6_y2_to_x5_y3" type="revolute">
+    <joint name="SW_x6_y2_to_x5_y3" type="ball">
       <parent>mass_x6_y2</parent>
       <child>mass_x5_y3</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x5_y3">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x6_y2_to_x7_y3" type="revolute">
+    <joint name="NW_x6_y2_to_x7_y3" type="ball">
       <parent>mass_x6_y2</parent>
       <child>mass_x7_y3</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x7_y3">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x7_y2_to_x8_y2" type="ball">
@@ -4100,46 +3316,14 @@
       <child>mass_x7_y3</child>
       <pose relative_to="mass_x7_y3">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x7_y2_to_x6_y3" type="revolute">
+    <joint name="SW_x7_y2_to_x6_y3" type="ball">
       <parent>mass_x7_y2</parent>
       <child>mass_x6_y3</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x6_y3">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x7_y2_to_x8_y3" type="revolute">
+    <joint name="NW_x7_y2_to_x8_y3" type="ball">
       <parent>mass_x7_y2</parent>
       <child>mass_x8_y3</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x8_y3">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x8_y2_to_x9_y2" type="ball">
@@ -4152,46 +3336,14 @@
       <child>mass_x8_y3</child>
       <pose relative_to="mass_x8_y3">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x8_y2_to_x7_y3" type="revolute">
+    <joint name="SW_x8_y2_to_x7_y3" type="ball">
       <parent>mass_x8_y2</parent>
       <child>mass_x7_y3</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x7_y3">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x8_y2_to_x9_y3" type="revolute">
+    <joint name="NW_x8_y2_to_x9_y3" type="ball">
       <parent>mass_x8_y2</parent>
       <child>mass_x9_y3</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x9_y3">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="W_x9_y2_to_x9_y3" type="ball">
@@ -4199,25 +3351,9 @@
       <child>mass_x9_y3</child>
       <pose relative_to="mass_x9_y3">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x9_y2_to_x8_y3" type="revolute">
+    <joint name="SW_x9_y2_to_x8_y3" type="ball">
       <parent>mass_x9_y2</parent>
       <child>mass_x8_y3</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x8_y3">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
     <joint name="N_x0_y3_to_x1_y3" type="ball">
@@ -4230,25 +3366,9 @@
       <child>mass_x0_y4</child>
       <pose relative_to="mass_x0_y4">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="NW_x0_y3_to_x1_y4" type="revolute">
+    <joint name="NW_x0_y3_to_x1_y4" type="ball">
       <parent>mass_x0_y3</parent>
       <child>mass_x1_y4</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x1_y4">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x1_y3_to_x2_y3" type="ball">
@@ -4261,46 +3381,14 @@
       <child>mass_x1_y4</child>
       <pose relative_to="mass_x1_y4">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x1_y3_to_x0_y4" type="revolute">
+    <joint name="SW_x1_y3_to_x0_y4" type="ball">
       <parent>mass_x1_y3</parent>
       <child>mass_x0_y4</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x0_y4">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x1_y3_to_x2_y4" type="revolute">
+    <joint name="NW_x1_y3_to_x2_y4" type="ball">
       <parent>mass_x1_y3</parent>
       <child>mass_x2_y4</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x2_y4">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x2_y3_to_x3_y3" type="ball">
@@ -4313,46 +3401,14 @@
       <child>mass_x2_y4</child>
       <pose relative_to="mass_x2_y4">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x2_y3_to_x1_y4" type="revolute">
+    <joint name="SW_x2_y3_to_x1_y4" type="ball">
       <parent>mass_x2_y3</parent>
       <child>mass_x1_y4</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x1_y4">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x2_y3_to_x3_y4" type="revolute">
+    <joint name="NW_x2_y3_to_x3_y4" type="ball">
       <parent>mass_x2_y3</parent>
       <child>mass_x3_y4</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x3_y4">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x3_y3_to_x4_y3" type="ball">
@@ -4365,46 +3421,14 @@
       <child>mass_x3_y4</child>
       <pose relative_to="mass_x3_y4">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x3_y3_to_x2_y4" type="revolute">
+    <joint name="SW_x3_y3_to_x2_y4" type="ball">
       <parent>mass_x3_y3</parent>
       <child>mass_x2_y4</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x2_y4">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x3_y3_to_x4_y4" type="revolute">
+    <joint name="NW_x3_y3_to_x4_y4" type="ball">
       <parent>mass_x3_y3</parent>
       <child>mass_x4_y4</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x4_y4">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x4_y3_to_x5_y3" type="ball">
@@ -4417,46 +3441,14 @@
       <child>mass_x4_y4</child>
       <pose relative_to="mass_x4_y4">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x4_y3_to_x3_y4" type="revolute">
+    <joint name="SW_x4_y3_to_x3_y4" type="ball">
       <parent>mass_x4_y3</parent>
       <child>mass_x3_y4</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x3_y4">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x4_y3_to_x5_y4" type="revolute">
+    <joint name="NW_x4_y3_to_x5_y4" type="ball">
       <parent>mass_x4_y3</parent>
       <child>mass_x5_y4</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x5_y4">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x5_y3_to_x6_y3" type="ball">
@@ -4469,46 +3461,14 @@
       <child>mass_x5_y4</child>
       <pose relative_to="mass_x5_y4">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x5_y3_to_x4_y4" type="revolute">
+    <joint name="SW_x5_y3_to_x4_y4" type="ball">
       <parent>mass_x5_y3</parent>
       <child>mass_x4_y4</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x4_y4">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x5_y3_to_x6_y4" type="revolute">
+    <joint name="NW_x5_y3_to_x6_y4" type="ball">
       <parent>mass_x5_y3</parent>
       <child>mass_x6_y4</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x6_y4">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x6_y3_to_x7_y3" type="ball">
@@ -4521,46 +3481,14 @@
       <child>mass_x6_y4</child>
       <pose relative_to="mass_x6_y4">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x6_y3_to_x5_y4" type="revolute">
+    <joint name="SW_x6_y3_to_x5_y4" type="ball">
       <parent>mass_x6_y3</parent>
       <child>mass_x5_y4</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x5_y4">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x6_y3_to_x7_y4" type="revolute">
+    <joint name="NW_x6_y3_to_x7_y4" type="ball">
       <parent>mass_x6_y3</parent>
       <child>mass_x7_y4</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x7_y4">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x7_y3_to_x8_y3" type="ball">
@@ -4573,46 +3501,14 @@
       <child>mass_x7_y4</child>
       <pose relative_to="mass_x7_y4">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x7_y3_to_x6_y4" type="revolute">
+    <joint name="SW_x7_y3_to_x6_y4" type="ball">
       <parent>mass_x7_y3</parent>
       <child>mass_x6_y4</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x6_y4">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x7_y3_to_x8_y4" type="revolute">
+    <joint name="NW_x7_y3_to_x8_y4" type="ball">
       <parent>mass_x7_y3</parent>
       <child>mass_x8_y4</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x8_y4">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x8_y3_to_x9_y3" type="ball">
@@ -4625,46 +3521,14 @@
       <child>mass_x8_y4</child>
       <pose relative_to="mass_x8_y4">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x8_y3_to_x7_y4" type="revolute">
+    <joint name="SW_x8_y3_to_x7_y4" type="ball">
       <parent>mass_x8_y3</parent>
       <child>mass_x7_y4</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x7_y4">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x8_y3_to_x9_y4" type="revolute">
+    <joint name="NW_x8_y3_to_x9_y4" type="ball">
       <parent>mass_x8_y3</parent>
       <child>mass_x9_y4</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x9_y4">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="W_x9_y3_to_x9_y4" type="ball">
@@ -4672,25 +3536,9 @@
       <child>mass_x9_y4</child>
       <pose relative_to="mass_x9_y4">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x9_y3_to_x8_y4" type="revolute">
+    <joint name="SW_x9_y3_to_x8_y4" type="ball">
       <parent>mass_x9_y3</parent>
       <child>mass_x8_y4</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x8_y4">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
     <joint name="N_x0_y4_to_x1_y4" type="ball">
@@ -4703,25 +3551,9 @@
       <child>mass_x0_y5</child>
       <pose relative_to="mass_x0_y5">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="NW_x0_y4_to_x1_y5" type="revolute">
+    <joint name="NW_x0_y4_to_x1_y5" type="ball">
       <parent>mass_x0_y4</parent>
       <child>mass_x1_y5</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x1_y5">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x1_y4_to_x2_y4" type="ball">
@@ -4734,46 +3566,14 @@
       <child>mass_x1_y5</child>
       <pose relative_to="mass_x1_y5">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x1_y4_to_x0_y5" type="revolute">
+    <joint name="SW_x1_y4_to_x0_y5" type="ball">
       <parent>mass_x1_y4</parent>
       <child>mass_x0_y5</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x0_y5">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x1_y4_to_x2_y5" type="revolute">
+    <joint name="NW_x1_y4_to_x2_y5" type="ball">
       <parent>mass_x1_y4</parent>
       <child>mass_x2_y5</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x2_y5">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x2_y4_to_x3_y4" type="ball">
@@ -4786,46 +3586,14 @@
       <child>mass_x2_y5</child>
       <pose relative_to="mass_x2_y5">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x2_y4_to_x1_y5" type="revolute">
+    <joint name="SW_x2_y4_to_x1_y5" type="ball">
       <parent>mass_x2_y4</parent>
       <child>mass_x1_y5</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x1_y5">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x2_y4_to_x3_y5" type="revolute">
+    <joint name="NW_x2_y4_to_x3_y5" type="ball">
       <parent>mass_x2_y4</parent>
       <child>mass_x3_y5</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x3_y5">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x3_y4_to_x4_y4" type="ball">
@@ -4838,46 +3606,14 @@
       <child>mass_x3_y5</child>
       <pose relative_to="mass_x3_y5">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x3_y4_to_x2_y5" type="revolute">
+    <joint name="SW_x3_y4_to_x2_y5" type="ball">
       <parent>mass_x3_y4</parent>
       <child>mass_x2_y5</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x2_y5">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x3_y4_to_x4_y5" type="revolute">
+    <joint name="NW_x3_y4_to_x4_y5" type="ball">
       <parent>mass_x3_y4</parent>
       <child>mass_x4_y5</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x4_y5">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x4_y4_to_x5_y4" type="ball">
@@ -4890,46 +3626,14 @@
       <child>mass_x4_y5</child>
       <pose relative_to="mass_x4_y5">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x4_y4_to_x3_y5" type="revolute">
+    <joint name="SW_x4_y4_to_x3_y5" type="ball">
       <parent>mass_x4_y4</parent>
       <child>mass_x3_y5</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x3_y5">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x4_y4_to_x5_y5" type="revolute">
+    <joint name="NW_x4_y4_to_x5_y5" type="ball">
       <parent>mass_x4_y4</parent>
       <child>mass_x5_y5</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x5_y5">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x5_y4_to_x6_y4" type="ball">
@@ -4942,46 +3646,14 @@
       <child>mass_x5_y5</child>
       <pose relative_to="mass_x5_y5">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x5_y4_to_x4_y5" type="revolute">
+    <joint name="SW_x5_y4_to_x4_y5" type="ball">
       <parent>mass_x5_y4</parent>
       <child>mass_x4_y5</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x4_y5">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x5_y4_to_x6_y5" type="revolute">
+    <joint name="NW_x5_y4_to_x6_y5" type="ball">
       <parent>mass_x5_y4</parent>
       <child>mass_x6_y5</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x6_y5">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x6_y4_to_x7_y4" type="ball">
@@ -4994,46 +3666,14 @@
       <child>mass_x6_y5</child>
       <pose relative_to="mass_x6_y5">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x6_y4_to_x5_y5" type="revolute">
+    <joint name="SW_x6_y4_to_x5_y5" type="ball">
       <parent>mass_x6_y4</parent>
       <child>mass_x5_y5</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x5_y5">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x6_y4_to_x7_y5" type="revolute">
+    <joint name="NW_x6_y4_to_x7_y5" type="ball">
       <parent>mass_x6_y4</parent>
       <child>mass_x7_y5</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x7_y5">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x7_y4_to_x8_y4" type="ball">
@@ -5046,46 +3686,14 @@
       <child>mass_x7_y5</child>
       <pose relative_to="mass_x7_y5">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x7_y4_to_x6_y5" type="revolute">
+    <joint name="SW_x7_y4_to_x6_y5" type="ball">
       <parent>mass_x7_y4</parent>
       <child>mass_x6_y5</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x6_y5">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x7_y4_to_x8_y5" type="revolute">
+    <joint name="NW_x7_y4_to_x8_y5" type="ball">
       <parent>mass_x7_y4</parent>
       <child>mass_x8_y5</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x8_y5">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x8_y4_to_x9_y4" type="ball">
@@ -5098,46 +3706,14 @@
       <child>mass_x8_y5</child>
       <pose relative_to="mass_x8_y5">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x8_y4_to_x7_y5" type="revolute">
+    <joint name="SW_x8_y4_to_x7_y5" type="ball">
       <parent>mass_x8_y4</parent>
       <child>mass_x7_y5</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x7_y5">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x8_y4_to_x9_y5" type="revolute">
+    <joint name="NW_x8_y4_to_x9_y5" type="ball">
       <parent>mass_x8_y4</parent>
       <child>mass_x9_y5</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x9_y5">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="W_x9_y4_to_x9_y5" type="ball">
@@ -5145,25 +3721,9 @@
       <child>mass_x9_y5</child>
       <pose relative_to="mass_x9_y5">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x9_y4_to_x8_y5" type="revolute">
+    <joint name="SW_x9_y4_to_x8_y5" type="ball">
       <parent>mass_x9_y4</parent>
       <child>mass_x8_y5</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x8_y5">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
     <joint name="N_x0_y5_to_x1_y5" type="ball">
@@ -5176,25 +3736,9 @@
       <child>mass_x0_y6</child>
       <pose relative_to="mass_x0_y6">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="NW_x0_y5_to_x1_y6" type="revolute">
+    <joint name="NW_x0_y5_to_x1_y6" type="ball">
       <parent>mass_x0_y5</parent>
       <child>mass_x1_y6</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x1_y6">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x1_y5_to_x2_y5" type="ball">
@@ -5207,46 +3751,14 @@
       <child>mass_x1_y6</child>
       <pose relative_to="mass_x1_y6">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x1_y5_to_x0_y6" type="revolute">
+    <joint name="SW_x1_y5_to_x0_y6" type="ball">
       <parent>mass_x1_y5</parent>
       <child>mass_x0_y6</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x0_y6">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x1_y5_to_x2_y6" type="revolute">
+    <joint name="NW_x1_y5_to_x2_y6" type="ball">
       <parent>mass_x1_y5</parent>
       <child>mass_x2_y6</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x2_y6">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x2_y5_to_x3_y5" type="ball">
@@ -5259,46 +3771,14 @@
       <child>mass_x2_y6</child>
       <pose relative_to="mass_x2_y6">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x2_y5_to_x1_y6" type="revolute">
+    <joint name="SW_x2_y5_to_x1_y6" type="ball">
       <parent>mass_x2_y5</parent>
       <child>mass_x1_y6</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x1_y6">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x2_y5_to_x3_y6" type="revolute">
+    <joint name="NW_x2_y5_to_x3_y6" type="ball">
       <parent>mass_x2_y5</parent>
       <child>mass_x3_y6</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x3_y6">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x3_y5_to_x4_y5" type="ball">
@@ -5311,46 +3791,14 @@
       <child>mass_x3_y6</child>
       <pose relative_to="mass_x3_y6">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x3_y5_to_x2_y6" type="revolute">
+    <joint name="SW_x3_y5_to_x2_y6" type="ball">
       <parent>mass_x3_y5</parent>
       <child>mass_x2_y6</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x2_y6">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x3_y5_to_x4_y6" type="revolute">
+    <joint name="NW_x3_y5_to_x4_y6" type="ball">
       <parent>mass_x3_y5</parent>
       <child>mass_x4_y6</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x4_y6">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x4_y5_to_x5_y5" type="ball">
@@ -5363,46 +3811,14 @@
       <child>mass_x4_y6</child>
       <pose relative_to="mass_x4_y6">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x4_y5_to_x3_y6" type="revolute">
+    <joint name="SW_x4_y5_to_x3_y6" type="ball">
       <parent>mass_x4_y5</parent>
       <child>mass_x3_y6</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x3_y6">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x4_y5_to_x5_y6" type="revolute">
+    <joint name="NW_x4_y5_to_x5_y6" type="ball">
       <parent>mass_x4_y5</parent>
       <child>mass_x5_y6</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x5_y6">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x5_y5_to_x6_y5" type="ball">
@@ -5415,46 +3831,14 @@
       <child>mass_x5_y6</child>
       <pose relative_to="mass_x5_y6">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x5_y5_to_x4_y6" type="revolute">
+    <joint name="SW_x5_y5_to_x4_y6" type="ball">
       <parent>mass_x5_y5</parent>
       <child>mass_x4_y6</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x4_y6">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x5_y5_to_x6_y6" type="revolute">
+    <joint name="NW_x5_y5_to_x6_y6" type="ball">
       <parent>mass_x5_y5</parent>
       <child>mass_x6_y6</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x6_y6">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x6_y5_to_x7_y5" type="ball">
@@ -5467,46 +3851,14 @@
       <child>mass_x6_y6</child>
       <pose relative_to="mass_x6_y6">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x6_y5_to_x5_y6" type="revolute">
+    <joint name="SW_x6_y5_to_x5_y6" type="ball">
       <parent>mass_x6_y5</parent>
       <child>mass_x5_y6</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x5_y6">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x6_y5_to_x7_y6" type="revolute">
+    <joint name="NW_x6_y5_to_x7_y6" type="ball">
       <parent>mass_x6_y5</parent>
       <child>mass_x7_y6</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x7_y6">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x7_y5_to_x8_y5" type="ball">
@@ -5519,46 +3871,14 @@
       <child>mass_x7_y6</child>
       <pose relative_to="mass_x7_y6">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x7_y5_to_x6_y6" type="revolute">
+    <joint name="SW_x7_y5_to_x6_y6" type="ball">
       <parent>mass_x7_y5</parent>
       <child>mass_x6_y6</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x6_y6">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x7_y5_to_x8_y6" type="revolute">
+    <joint name="NW_x7_y5_to_x8_y6" type="ball">
       <parent>mass_x7_y5</parent>
       <child>mass_x8_y6</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x8_y6">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x8_y5_to_x9_y5" type="ball">
@@ -5571,46 +3891,14 @@
       <child>mass_x8_y6</child>
       <pose relative_to="mass_x8_y6">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x8_y5_to_x7_y6" type="revolute">
+    <joint name="SW_x8_y5_to_x7_y6" type="ball">
       <parent>mass_x8_y5</parent>
       <child>mass_x7_y6</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x7_y6">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x8_y5_to_x9_y6" type="revolute">
+    <joint name="NW_x8_y5_to_x9_y6" type="ball">
       <parent>mass_x8_y5</parent>
       <child>mass_x9_y6</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x9_y6">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="W_x9_y5_to_x9_y6" type="ball">
@@ -5618,25 +3906,9 @@
       <child>mass_x9_y6</child>
       <pose relative_to="mass_x9_y6">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x9_y5_to_x8_y6" type="revolute">
+    <joint name="SW_x9_y5_to_x8_y6" type="ball">
       <parent>mass_x9_y5</parent>
       <child>mass_x8_y6</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x8_y6">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
     <joint name="N_x0_y6_to_x1_y6" type="ball">
@@ -5649,25 +3921,9 @@
       <child>mass_x0_y7</child>
       <pose relative_to="mass_x0_y7">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="NW_x0_y6_to_x1_y7" type="revolute">
+    <joint name="NW_x0_y6_to_x1_y7" type="ball">
       <parent>mass_x0_y6</parent>
       <child>mass_x1_y7</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x1_y7">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x1_y6_to_x2_y6" type="ball">
@@ -5680,46 +3936,14 @@
       <child>mass_x1_y7</child>
       <pose relative_to="mass_x1_y7">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x1_y6_to_x0_y7" type="revolute">
+    <joint name="SW_x1_y6_to_x0_y7" type="ball">
       <parent>mass_x1_y6</parent>
       <child>mass_x0_y7</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x0_y7">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x1_y6_to_x2_y7" type="revolute">
+    <joint name="NW_x1_y6_to_x2_y7" type="ball">
       <parent>mass_x1_y6</parent>
       <child>mass_x2_y7</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x2_y7">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x2_y6_to_x3_y6" type="ball">
@@ -5732,46 +3956,14 @@
       <child>mass_x2_y7</child>
       <pose relative_to="mass_x2_y7">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x2_y6_to_x1_y7" type="revolute">
+    <joint name="SW_x2_y6_to_x1_y7" type="ball">
       <parent>mass_x2_y6</parent>
       <child>mass_x1_y7</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x1_y7">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x2_y6_to_x3_y7" type="revolute">
+    <joint name="NW_x2_y6_to_x3_y7" type="ball">
       <parent>mass_x2_y6</parent>
       <child>mass_x3_y7</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x3_y7">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x3_y6_to_x4_y6" type="ball">
@@ -5784,46 +3976,14 @@
       <child>mass_x3_y7</child>
       <pose relative_to="mass_x3_y7">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x3_y6_to_x2_y7" type="revolute">
+    <joint name="SW_x3_y6_to_x2_y7" type="ball">
       <parent>mass_x3_y6</parent>
       <child>mass_x2_y7</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x2_y7">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x3_y6_to_x4_y7" type="revolute">
+    <joint name="NW_x3_y6_to_x4_y7" type="ball">
       <parent>mass_x3_y6</parent>
       <child>mass_x4_y7</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x4_y7">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x4_y6_to_x5_y6" type="ball">
@@ -5836,46 +3996,14 @@
       <child>mass_x4_y7</child>
       <pose relative_to="mass_x4_y7">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x4_y6_to_x3_y7" type="revolute">
+    <joint name="SW_x4_y6_to_x3_y7" type="ball">
       <parent>mass_x4_y6</parent>
       <child>mass_x3_y7</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x3_y7">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x4_y6_to_x5_y7" type="revolute">
+    <joint name="NW_x4_y6_to_x5_y7" type="ball">
       <parent>mass_x4_y6</parent>
       <child>mass_x5_y7</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x5_y7">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x5_y6_to_x6_y6" type="ball">
@@ -5888,46 +4016,14 @@
       <child>mass_x5_y7</child>
       <pose relative_to="mass_x5_y7">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x5_y6_to_x4_y7" type="revolute">
+    <joint name="SW_x5_y6_to_x4_y7" type="ball">
       <parent>mass_x5_y6</parent>
       <child>mass_x4_y7</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x4_y7">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x5_y6_to_x6_y7" type="revolute">
+    <joint name="NW_x5_y6_to_x6_y7" type="ball">
       <parent>mass_x5_y6</parent>
       <child>mass_x6_y7</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x6_y7">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x6_y6_to_x7_y6" type="ball">
@@ -5940,46 +4036,14 @@
       <child>mass_x6_y7</child>
       <pose relative_to="mass_x6_y7">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x6_y6_to_x5_y7" type="revolute">
+    <joint name="SW_x6_y6_to_x5_y7" type="ball">
       <parent>mass_x6_y6</parent>
       <child>mass_x5_y7</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x5_y7">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x6_y6_to_x7_y7" type="revolute">
+    <joint name="NW_x6_y6_to_x7_y7" type="ball">
       <parent>mass_x6_y6</parent>
       <child>mass_x7_y7</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x7_y7">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x7_y6_to_x8_y6" type="ball">
@@ -5992,46 +4056,14 @@
       <child>mass_x7_y7</child>
       <pose relative_to="mass_x7_y7">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x7_y6_to_x6_y7" type="revolute">
+    <joint name="SW_x7_y6_to_x6_y7" type="ball">
       <parent>mass_x7_y6</parent>
       <child>mass_x6_y7</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x6_y7">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x7_y6_to_x8_y7" type="revolute">
+    <joint name="NW_x7_y6_to_x8_y7" type="ball">
       <parent>mass_x7_y6</parent>
       <child>mass_x8_y7</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x8_y7">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x8_y6_to_x9_y6" type="ball">
@@ -6044,46 +4076,14 @@
       <child>mass_x8_y7</child>
       <pose relative_to="mass_x8_y7">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x8_y6_to_x7_y7" type="revolute">
+    <joint name="SW_x8_y6_to_x7_y7" type="ball">
       <parent>mass_x8_y6</parent>
       <child>mass_x7_y7</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x7_y7">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x8_y6_to_x9_y7" type="revolute">
+    <joint name="NW_x8_y6_to_x9_y7" type="ball">
       <parent>mass_x8_y6</parent>
       <child>mass_x9_y7</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x9_y7">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="W_x9_y6_to_x9_y7" type="ball">
@@ -6091,25 +4091,9 @@
       <child>mass_x9_y7</child>
       <pose relative_to="mass_x9_y7">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x9_y6_to_x8_y7" type="revolute">
+    <joint name="SW_x9_y6_to_x8_y7" type="ball">
       <parent>mass_x9_y6</parent>
       <child>mass_x8_y7</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x8_y7">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
     <joint name="N_x0_y7_to_x1_y7" type="ball">
@@ -6122,25 +4106,9 @@
       <child>mass_x0_y8</child>
       <pose relative_to="mass_x0_y8">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="NW_x0_y7_to_x1_y8" type="revolute">
+    <joint name="NW_x0_y7_to_x1_y8" type="ball">
       <parent>mass_x0_y7</parent>
       <child>mass_x1_y8</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x1_y8">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x1_y7_to_x2_y7" type="ball">
@@ -6153,46 +4121,14 @@
       <child>mass_x1_y8</child>
       <pose relative_to="mass_x1_y8">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x1_y7_to_x0_y8" type="revolute">
+    <joint name="SW_x1_y7_to_x0_y8" type="ball">
       <parent>mass_x1_y7</parent>
       <child>mass_x0_y8</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x0_y8">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x1_y7_to_x2_y8" type="revolute">
+    <joint name="NW_x1_y7_to_x2_y8" type="ball">
       <parent>mass_x1_y7</parent>
       <child>mass_x2_y8</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x2_y8">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x2_y7_to_x3_y7" type="ball">
@@ -6205,46 +4141,14 @@
       <child>mass_x2_y8</child>
       <pose relative_to="mass_x2_y8">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x2_y7_to_x1_y8" type="revolute">
+    <joint name="SW_x2_y7_to_x1_y8" type="ball">
       <parent>mass_x2_y7</parent>
       <child>mass_x1_y8</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x1_y8">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x2_y7_to_x3_y8" type="revolute">
+    <joint name="NW_x2_y7_to_x3_y8" type="ball">
       <parent>mass_x2_y7</parent>
       <child>mass_x3_y8</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x3_y8">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x3_y7_to_x4_y7" type="ball">
@@ -6257,46 +4161,14 @@
       <child>mass_x3_y8</child>
       <pose relative_to="mass_x3_y8">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x3_y7_to_x2_y8" type="revolute">
+    <joint name="SW_x3_y7_to_x2_y8" type="ball">
       <parent>mass_x3_y7</parent>
       <child>mass_x2_y8</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x2_y8">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x3_y7_to_x4_y8" type="revolute">
+    <joint name="NW_x3_y7_to_x4_y8" type="ball">
       <parent>mass_x3_y7</parent>
       <child>mass_x4_y8</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x4_y8">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x4_y7_to_x5_y7" type="ball">
@@ -6309,46 +4181,14 @@
       <child>mass_x4_y8</child>
       <pose relative_to="mass_x4_y8">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x4_y7_to_x3_y8" type="revolute">
+    <joint name="SW_x4_y7_to_x3_y8" type="ball">
       <parent>mass_x4_y7</parent>
       <child>mass_x3_y8</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x3_y8">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x4_y7_to_x5_y8" type="revolute">
+    <joint name="NW_x4_y7_to_x5_y8" type="ball">
       <parent>mass_x4_y7</parent>
       <child>mass_x5_y8</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x5_y8">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x5_y7_to_x6_y7" type="ball">
@@ -6361,46 +4201,14 @@
       <child>mass_x5_y8</child>
       <pose relative_to="mass_x5_y8">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x5_y7_to_x4_y8" type="revolute">
+    <joint name="SW_x5_y7_to_x4_y8" type="ball">
       <parent>mass_x5_y7</parent>
       <child>mass_x4_y8</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x4_y8">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x5_y7_to_x6_y8" type="revolute">
+    <joint name="NW_x5_y7_to_x6_y8" type="ball">
       <parent>mass_x5_y7</parent>
       <child>mass_x6_y8</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x6_y8">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x6_y7_to_x7_y7" type="ball">
@@ -6413,46 +4221,14 @@
       <child>mass_x6_y8</child>
       <pose relative_to="mass_x6_y8">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x6_y7_to_x5_y8" type="revolute">
+    <joint name="SW_x6_y7_to_x5_y8" type="ball">
       <parent>mass_x6_y7</parent>
       <child>mass_x5_y8</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x5_y8">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x6_y7_to_x7_y8" type="revolute">
+    <joint name="NW_x6_y7_to_x7_y8" type="ball">
       <parent>mass_x6_y7</parent>
       <child>mass_x7_y8</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x7_y8">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x7_y7_to_x8_y7" type="ball">
@@ -6465,46 +4241,14 @@
       <child>mass_x7_y8</child>
       <pose relative_to="mass_x7_y8">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x7_y7_to_x6_y8" type="revolute">
+    <joint name="SW_x7_y7_to_x6_y8" type="ball">
       <parent>mass_x7_y7</parent>
       <child>mass_x6_y8</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x6_y8">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x7_y7_to_x8_y8" type="revolute">
+    <joint name="NW_x7_y7_to_x8_y8" type="ball">
       <parent>mass_x7_y7</parent>
       <child>mass_x8_y8</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x8_y8">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x8_y7_to_x9_y7" type="ball">
@@ -6517,46 +4261,14 @@
       <child>mass_x8_y8</child>
       <pose relative_to="mass_x8_y8">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x8_y7_to_x7_y8" type="revolute">
+    <joint name="SW_x8_y7_to_x7_y8" type="ball">
       <parent>mass_x8_y7</parent>
       <child>mass_x7_y8</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x7_y8">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x8_y7_to_x9_y8" type="revolute">
+    <joint name="NW_x8_y7_to_x9_y8" type="ball">
       <parent>mass_x8_y7</parent>
       <child>mass_x9_y8</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x9_y8">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="W_x9_y7_to_x9_y8" type="ball">
@@ -6564,25 +4276,9 @@
       <child>mass_x9_y8</child>
       <pose relative_to="mass_x9_y8">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x9_y7_to_x8_y8" type="revolute">
+    <joint name="SW_x9_y7_to_x8_y8" type="ball">
       <parent>mass_x9_y7</parent>
       <child>mass_x8_y8</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x8_y8">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
     <joint name="N_x0_y8_to_x1_y8" type="ball">
@@ -6595,25 +4291,9 @@
       <child>mass_x0_y9</child>
       <pose relative_to="mass_x0_y9">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="NW_x0_y8_to_x1_y9" type="revolute">
+    <joint name="NW_x0_y8_to_x1_y9" type="ball">
       <parent>mass_x0_y8</parent>
       <child>mass_x1_y9</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x1_y9">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x1_y8_to_x2_y8" type="ball">
@@ -6626,46 +4306,14 @@
       <child>mass_x1_y9</child>
       <pose relative_to="mass_x1_y9">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x1_y8_to_x0_y9" type="revolute">
+    <joint name="SW_x1_y8_to_x0_y9" type="ball">
       <parent>mass_x1_y8</parent>
       <child>mass_x0_y9</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x0_y9">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x1_y8_to_x2_y9" type="revolute">
+    <joint name="NW_x1_y8_to_x2_y9" type="ball">
       <parent>mass_x1_y8</parent>
       <child>mass_x2_y9</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x2_y9">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x2_y8_to_x3_y8" type="ball">
@@ -6678,46 +4326,14 @@
       <child>mass_x2_y9</child>
       <pose relative_to="mass_x2_y9">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x2_y8_to_x1_y9" type="revolute">
+    <joint name="SW_x2_y8_to_x1_y9" type="ball">
       <parent>mass_x2_y8</parent>
       <child>mass_x1_y9</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x1_y9">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x2_y8_to_x3_y9" type="revolute">
+    <joint name="NW_x2_y8_to_x3_y9" type="ball">
       <parent>mass_x2_y8</parent>
       <child>mass_x3_y9</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x3_y9">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x3_y8_to_x4_y8" type="ball">
@@ -6730,46 +4346,14 @@
       <child>mass_x3_y9</child>
       <pose relative_to="mass_x3_y9">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x3_y8_to_x2_y9" type="revolute">
+    <joint name="SW_x3_y8_to_x2_y9" type="ball">
       <parent>mass_x3_y8</parent>
       <child>mass_x2_y9</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x2_y9">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x3_y8_to_x4_y9" type="revolute">
+    <joint name="NW_x3_y8_to_x4_y9" type="ball">
       <parent>mass_x3_y8</parent>
       <child>mass_x4_y9</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x4_y9">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x4_y8_to_x5_y8" type="ball">
@@ -6782,46 +4366,14 @@
       <child>mass_x4_y9</child>
       <pose relative_to="mass_x4_y9">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x4_y8_to_x3_y9" type="revolute">
+    <joint name="SW_x4_y8_to_x3_y9" type="ball">
       <parent>mass_x4_y8</parent>
       <child>mass_x3_y9</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x3_y9">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x4_y8_to_x5_y9" type="revolute">
+    <joint name="NW_x4_y8_to_x5_y9" type="ball">
       <parent>mass_x4_y8</parent>
       <child>mass_x5_y9</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x5_y9">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x5_y8_to_x6_y8" type="ball">
@@ -6834,46 +4386,14 @@
       <child>mass_x5_y9</child>
       <pose relative_to="mass_x5_y9">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x5_y8_to_x4_y9" type="revolute">
+    <joint name="SW_x5_y8_to_x4_y9" type="ball">
       <parent>mass_x5_y8</parent>
       <child>mass_x4_y9</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x4_y9">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x5_y8_to_x6_y9" type="revolute">
+    <joint name="NW_x5_y8_to_x6_y9" type="ball">
       <parent>mass_x5_y8</parent>
       <child>mass_x6_y9</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x6_y9">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x6_y8_to_x7_y8" type="ball">
@@ -6886,46 +4406,14 @@
       <child>mass_x6_y9</child>
       <pose relative_to="mass_x6_y9">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x6_y8_to_x5_y9" type="revolute">
+    <joint name="SW_x6_y8_to_x5_y9" type="ball">
       <parent>mass_x6_y8</parent>
       <child>mass_x5_y9</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x5_y9">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x6_y8_to_x7_y9" type="revolute">
+    <joint name="NW_x6_y8_to_x7_y9" type="ball">
       <parent>mass_x6_y8</parent>
       <child>mass_x7_y9</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x7_y9">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x7_y8_to_x8_y8" type="ball">
@@ -6938,46 +4426,14 @@
       <child>mass_x7_y9</child>
       <pose relative_to="mass_x7_y9">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x7_y8_to_x6_y9" type="revolute">
+    <joint name="SW_x7_y8_to_x6_y9" type="ball">
       <parent>mass_x7_y8</parent>
       <child>mass_x6_y9</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x6_y9">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x7_y8_to_x8_y9" type="revolute">
+    <joint name="NW_x7_y8_to_x8_y9" type="ball">
       <parent>mass_x7_y8</parent>
       <child>mass_x8_y9</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x8_y9">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x8_y8_to_x9_y8" type="ball">
@@ -6990,46 +4446,14 @@
       <child>mass_x8_y9</child>
       <pose relative_to="mass_x8_y9">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x8_y8_to_x7_y9" type="revolute">
+    <joint name="SW_x8_y8_to_x7_y9" type="ball">
       <parent>mass_x8_y8</parent>
       <child>mass_x7_y9</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x7_y9">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
-    <joint name="NW_x8_y8_to_x9_y9" type="revolute">
+    <joint name="NW_x8_y8_to_x9_y9" type="ball">
       <parent>mass_x8_y8</parent>
       <child>mass_x9_y9</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x9_y9">-0.044444444444444446 -0.044444444444444446 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="W_x9_y8_to_x9_y9" type="ball">
@@ -7037,25 +4461,9 @@
       <child>mass_x9_y9</child>
       <pose relative_to="mass_x9_y9">0 -0.044444444444444446 0 0 0 1.5707963267948966</pose>
     </joint>
-    <joint name="SW_x9_y8_to_x8_y9" type="revolute">
+    <joint name="SW_x9_y8_to_x8_y9" type="ball">
       <parent>mass_x9_y8</parent>
       <child>mass_x8_y9</child>
-      <physics>
-        <ode>
-          <cfm_damping>true</cfm_damping>
-        </ode>
-      </physics>
-      <axis>
-        <xyz>0 1 0</xyz>
-        <dynamics>
-          <spring_stiffness>0</spring_stiffness>
-          <spring_reference>0</spring_reference>
-        </dynamics>
-        <limit>
-          <lower>-2.356194490192345</lower>
-          <upper>2.356194490192345</upper>
-        </limit>
-      </axis>
       <pose relative_to="mass_x8_y9">0.044444444444444446 -0.044444444444444446 0 0 0 2.356194490192345</pose>
     </joint>
     <joint name="N_x0_y9_to_x1_y9" type="ball">
@@ -7104,10 +4512,6 @@
       <pose relative_to="mass_x9_y9">-0.044444444444444446 0 0 0 0 0</pose>
     </joint>
     <joint name="fixed_joint_mass_x0_y0_to_world" type="fixed">
-      <parent>world</parent>
-      <child>mass_x0_y9</child>
-    </joint>
-    <joint name="fixed_joint_mass_x0_y9_to_world" type="fixed">
       <parent>world</parent>
       <child>mass_x0_y0</child>
     </joint>
