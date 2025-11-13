@@ -1,5 +1,5 @@
 <!-- /sim/world_with_ground.sdf -->
-<sdf version="1.9">
+<sdf version="1.7">
   <world name="default">
     <gravity>0 0 -9.81</gravity>
 
