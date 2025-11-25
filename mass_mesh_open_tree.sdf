@@ -701,125 +701,125 @@
         </geometry>
       </visual>
     </link>
-    <joint name="N_x-2_y-2_to_x-1_y-2" type="ball">
-      <parent>mass_x-2_y-2</parent>
-      <child>mass_x-1_y-2</child>
-      <pose relative_to="mass_x-1_y-2">-0.1 0 0 0 0 0</pose>
-    </joint>
-    <joint name="N_x-1_y-2_to_x0_y-2" type="ball">
-      <parent>mass_x-1_y-2</parent>
-      <child>mass_x0_y-2</child>
-      <pose relative_to="mass_x0_y-2">-0.1 0 0 0 0 0</pose>
-    </joint>
-    <joint name="N_x0_y-2_to_x1_y-2" type="ball">
-      <parent>mass_x0_y-2</parent>
-      <child>mass_x1_y-2</child>
-      <pose relative_to="mass_x1_y-2">-0.1 0 0 0 0 0</pose>
-    </joint>
-    <joint name="W_x0_y-2_to_x0_y-1" type="ball">
-      <parent>mass_x0_y-2</parent>
-      <child>mass_x0_y-1</child>
-      <pose relative_to="mass_x0_y-1">0 -0.1 0 0 0 1.5707963267948966</pose>
-    </joint>
-    <joint name="N_x1_y-2_to_x2_y-2" type="ball">
-      <parent>mass_x1_y-2</parent>
-      <child>mass_x2_y-2</child>
-      <pose relative_to="mass_x2_y-2">-0.1 0 0 0 0 0</pose>
-    </joint>
-    <joint name="N_x-2_y-1_to_x-1_y-1" type="ball">
-      <parent>mass_x-2_y-1</parent>
-      <child>mass_x-1_y-1</child>
-      <pose relative_to="mass_x-1_y-1">-0.1 0 0 0 0 0</pose>
-    </joint>
-    <joint name="N_x-1_y-1_to_x0_y-1" type="ball">
-      <parent>mass_x-1_y-1</parent>
-      <child>mass_x0_y-1</child>
-      <pose relative_to="mass_x0_y-1">-0.1 0 0 0 0 0</pose>
-    </joint>
-    <joint name="N_x0_y-1_to_x1_y-1" type="ball">
-      <parent>mass_x0_y-1</parent>
-      <child>mass_x1_y-1</child>
-      <pose relative_to="mass_x1_y-1">-0.1 0 0 0 0 0</pose>
-    </joint>
-    <joint name="W_x0_y-1_to_x0_y0" type="ball">
-      <parent>mass_x0_y-1</parent>
-      <child>mass_x0_y0</child>
-      <pose relative_to="mass_x0_y0">0 -0.1 0 0 0 1.5707963267948966</pose>
-    </joint>
-    <joint name="N_x1_y-1_to_x2_y-1" type="ball">
-      <parent>mass_x1_y-1</parent>
-      <child>mass_x2_y-1</child>
-      <pose relative_to="mass_x2_y-1">-0.1 0 0 0 0 0</pose>
-    </joint>
-    <joint name="N_x-2_y0_to_x-1_y0" type="ball">
-      <parent>mass_x-2_y0</parent>
-      <child>mass_x-1_y0</child>
-      <pose relative_to="mass_x-1_y0">-0.1 0 0 0 0 0</pose>
-    </joint>
-    <joint name="N_x-1_y0_to_x0_y0" type="ball">
-      <parent>mass_x-1_y0</parent>
-      <child>mass_x0_y0</child>
-      <pose relative_to="mass_x0_y0">-0.1 0 0 0 0 0</pose>
-    </joint>
     <joint name="N_x0_y0_to_x1_y0" type="ball">
       <parent>mass_x0_y0</parent>
       <child>mass_x1_y0</child>
       <pose relative_to="mass_x1_y0">-0.1 0 0 0 0 0</pose>
+    </joint>
+    <joint name="S_x0_y0_to_x-1_y0" type="ball">
+      <parent>mass_x0_y0</parent>
+      <child>mass_x-1_y0</child>
+      <pose relative_to="mass_x-1_y0">-0.1 0 0 0 0 3.141592653589793</pose>
     </joint>
     <joint name="W_x0_y0_to_x0_y1" type="ball">
       <parent>mass_x0_y0</parent>
       <child>mass_x0_y1</child>
       <pose relative_to="mass_x0_y1">0 -0.1 0 0 0 1.5707963267948966</pose>
     </joint>
+    <joint name="E_x0_y0_to_x0_y-1" type="ball">
+      <parent>mass_x0_y0</parent>
+      <child>mass_x0_y-1</child>
+      <pose relative_to="mass_x0_y-1">0 -0.1 0 0 0 -1.5707963267948966</pose>
+    </joint>
     <joint name="N_x1_y0_to_x2_y0" type="ball">
       <parent>mass_x1_y0</parent>
       <child>mass_x2_y0</child>
       <pose relative_to="mass_x2_y0">-0.1 0 0 0 0 0</pose>
     </joint>
-    <joint name="N_x-2_y1_to_x-1_y1" type="ball">
-      <parent>mass_x-2_y1</parent>
-      <child>mass_x-1_y1</child>
-      <pose relative_to="mass_x-1_y1">-0.1 0 0 0 0 0</pose>
-    </joint>
-    <joint name="N_x-1_y1_to_x0_y1" type="ball">
-      <parent>mass_x-1_y1</parent>
-      <child>mass_x0_y1</child>
-      <pose relative_to="mass_x0_y1">-0.1 0 0 0 0 0</pose>
+    <joint name="S_x1_y0_to_x0_y0" type="ball">
+      <parent>mass_x1_y0</parent>
+      <child>mass_x0_y0</child>
+      <pose relative_to="mass_x0_y0">-0.1 0 0 0 0 3.141592653589793</pose>
     </joint>
     <joint name="N_x0_y1_to_x1_y1" type="ball">
       <parent>mass_x0_y1</parent>
       <child>mass_x1_y1</child>
       <pose relative_to="mass_x1_y1">-0.1 0 0 0 0 0</pose>
     </joint>
+    <joint name="S_x0_y1_to_x-1_y1" type="ball">
+      <parent>mass_x0_y1</parent>
+      <child>mass_x-1_y1</child>
+      <pose relative_to="mass_x-1_y1">-0.1 0 0 0 0 3.141592653589793</pose>
+    </joint>
+    <joint name="N_x0_y-1_to_x1_y-1" type="ball">
+      <parent>mass_x0_y-1</parent>
+      <child>mass_x1_y-1</child>
+      <pose relative_to="mass_x1_y-1">-0.1 0 0 0 0 0</pose>
+    </joint>
+    <joint name="S_x0_y-1_to_x-1_y-1" type="ball">
+      <parent>mass_x0_y-1</parent>
+      <child>mass_x-1_y-1</child>
+      <pose relative_to="mass_x-1_y-1">-0.1 0 0 0 0 3.141592653589793</pose>
+    </joint>
     <joint name="W_x0_y1_to_x0_y2" type="ball">
       <parent>mass_x0_y1</parent>
       <child>mass_x0_y2</child>
       <pose relative_to="mass_x0_y2">0 -0.1 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="E_x0_y1_to_x0_y0" type="ball">
+      <parent>mass_x0_y1</parent>
+      <child>mass_x0_y0</child>
+      <pose relative_to="mass_x0_y0">0 -0.1 0 0 0 -1.5707963267948966</pose>
     </joint>
     <joint name="N_x1_y1_to_x2_y1" type="ball">
       <parent>mass_x1_y1</parent>
       <child>mass_x2_y1</child>
       <pose relative_to="mass_x2_y1">-0.1 0 0 0 0 0</pose>
     </joint>
-    <joint name="N_x-2_y2_to_x-1_y2" type="ball">
-      <parent>mass_x-2_y2</parent>
-      <child>mass_x-1_y2</child>
-      <pose relative_to="mass_x-1_y2">-0.1 0 0 0 0 0</pose>
+    <joint name="S_x1_y1_to_x0_y1" type="ball">
+      <parent>mass_x1_y1</parent>
+      <child>mass_x0_y1</child>
+      <pose relative_to="mass_x0_y1">-0.1 0 0 0 0 3.141592653589793</pose>
     </joint>
-    <joint name="N_x-1_y2_to_x0_y2" type="ball">
-      <parent>mass_x-1_y2</parent>
-      <child>mass_x0_y2</child>
-      <pose relative_to="mass_x0_y2">-0.1 0 0 0 0 0</pose>
+    <joint name="N_x1_y-1_to_x2_y-1" type="ball">
+      <parent>mass_x1_y-1</parent>
+      <child>mass_x2_y-1</child>
+      <pose relative_to="mass_x2_y-1">-0.1 0 0 0 0 0</pose>
+    </joint>
+    <joint name="S_x1_y-1_to_x0_y-1" type="ball">
+      <parent>mass_x1_y-1</parent>
+      <child>mass_x0_y-1</child>
+      <pose relative_to="mass_x0_y-1">-0.1 0 0 0 0 3.141592653589793</pose>
     </joint>
     <joint name="N_x0_y2_to_x1_y2" type="ball">
       <parent>mass_x0_y2</parent>
       <child>mass_x1_y2</child>
       <pose relative_to="mass_x1_y2">-0.1 0 0 0 0 0</pose>
     </joint>
+    <joint name="S_x0_y2_to_x-1_y2" type="ball">
+      <parent>mass_x0_y2</parent>
+      <child>mass_x-1_y2</child>
+      <pose relative_to="mass_x-1_y2">-0.1 0 0 0 0 3.141592653589793</pose>
+    </joint>
+    <joint name="N_x0_y-2_to_x1_y-2" type="ball">
+      <parent>mass_x0_y-2</parent>
+      <child>mass_x1_y-2</child>
+      <pose relative_to="mass_x1_y-2">-0.1 0 0 0 0 0</pose>
+    </joint>
+    <joint name="S_x0_y-2_to_x-1_y-2" type="ball">
+      <parent>mass_x0_y-2</parent>
+      <child>mass_x-1_y-2</child>
+      <pose relative_to="mass_x-1_y-2">-0.1 0 0 0 0 3.141592653589793</pose>
+    </joint>
     <joint name="N_x1_y2_to_x2_y2" type="ball">
       <parent>mass_x1_y2</parent>
       <child>mass_x2_y2</child>
       <pose relative_to="mass_x2_y2">-0.1 0 0 0 0 0</pose>
+    </joint>
+    <joint name="S_x1_y2_to_x0_y2" type="ball">
+      <parent>mass_x1_y2</parent>
+      <child>mass_x0_y2</child>
+      <pose relative_to="mass_x0_y2">-0.1 0 0 0 0 3.141592653589793</pose>
+    </joint>
+    <joint name="N_x1_y-2_to_x2_y-2" type="ball">
+      <parent>mass_x1_y-2</parent>
+      <child>mass_x2_y-2</child>
+      <pose relative_to="mass_x2_y-2">-0.1 0 0 0 0 0</pose>
+    </joint>
+    <joint name="S_x1_y-2_to_x0_y-2" type="ball">
+      <parent>mass_x1_y-2</parent>
+      <child>mass_x0_y-2</child>
+      <pose relative_to="mass_x0_y-2">-0.1 0 0 0 0 3.141592653589793</pose>
     </joint>
   </model>
 </sdf>
