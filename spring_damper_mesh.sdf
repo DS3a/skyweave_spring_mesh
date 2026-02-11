@@ -2,14 +2,14 @@
   <model name="spring_damper_mesh">
 
 
-<plugin name="skyweave_link_tracker" filename="libskyweave_link_tracker.so">
+  <plugin name="skyweave_link_tracker" filename="libskyweave_link_tracker.so">
   <print_rate>50.0</print_rate>
   <link_name_prefix>mass_</link_name_prefix>
 </plugin>
 
     <static>false</static>
     <link name="mass_x-2_y-2">
-      <pose>-0.2 -0.2 1.2 0 0 0</pose>
+      <pose>-0.2 -0.2 1.3 0 0 0</pose>
       <inertial>
         <mass>0.004</mass>
         <inertia>
@@ -40,7 +40,7 @@
       </visual>
     </link>
     <link name="mass_x-1_y-2">
-      <pose>-0.1 -0.2 1.2 0 0 0</pose>
+      <pose>-0.1 -0.2 1.3 0 0 0</pose>
       <inertial>
         <mass>0.004</mass>
         <inertia>
@@ -71,7 +71,7 @@
       </visual>
     </link>
     <link name="mass_x0_y-2">
-      <pose>0.0 -0.2 1.2 0 0 0</pose>
+      <pose>0.0 -0.2 1.3 0 0 0</pose>
       <inertial>
         <mass>0.004</mass>
         <inertia>
@@ -102,7 +102,7 @@
       </visual>
     </link>
     <link name="mass_x1_y-2">
-      <pose>0.1 -0.2 1.2 0 0 0</pose>
+      <pose>0.1 -0.2 1.3 0 0 0</pose>
       <inertial>
         <mass>0.004</mass>
         <inertia>
@@ -133,7 +133,7 @@
       </visual>
     </link>
     <link name="mass_x2_y-2">
-      <pose>0.2 -0.2 1.2 0 0 0</pose>
+      <pose>0.2 -0.2 1.3 0 0 0</pose>
       <inertial>
         <mass>0.004</mass>
         <inertia>
@@ -164,7 +164,7 @@
       </visual>
     </link>
     <link name="mass_x-2_y-1">
-      <pose>-0.2 -0.1 1.2 0 0 0</pose>
+      <pose>-0.2 -0.1 1.3 0 0 0</pose>
       <inertial>
         <mass>0.004</mass>
         <inertia>
@@ -195,7 +195,7 @@
       </visual>
     </link>
     <link name="mass_x-1_y-1">
-      <pose>-0.1 -0.1 1.2 0 0 0</pose>
+      <pose>-0.1 -0.1 1.3 0 0 0</pose>
       <inertial>
         <mass>0.004</mass>
         <inertia>
@@ -226,7 +226,7 @@
       </visual>
     </link>
     <link name="mass_x0_y-1">
-      <pose>0.0 -0.1 1.2 0 0 0</pose>
+      <pose>0.0 -0.1 1.3 0 0 0</pose>
       <inertial>
         <mass>0.004</mass>
         <inertia>
@@ -257,7 +257,7 @@
       </visual>
     </link>
     <link name="mass_x1_y-1">
-      <pose>0.1 -0.1 1.2 0 0 0</pose>
+      <pose>0.1 -0.1 1.3 0 0 0</pose>
       <inertial>
         <mass>0.004</mass>
         <inertia>
@@ -288,7 +288,7 @@
       </visual>
     </link>
     <link name="mass_x2_y-1">
-      <pose>0.2 -0.1 1.2 0 0 0</pose>
+      <pose>0.2 -0.1 1.3 0 0 0</pose>
       <inertial>
         <mass>0.004</mass>
         <inertia>
@@ -319,7 +319,7 @@
       </visual>
     </link>
     <link name="mass_x-2_y0">
-      <pose>-0.2 0.0 1.2 0 0 0</pose>
+      <pose>-0.2 0.0 1.3 0 0 0</pose>
       <inertial>
         <mass>0.004</mass>
         <inertia>
@@ -350,7 +350,7 @@
       </visual>
     </link>
     <link name="mass_x-1_y0">
-      <pose>-0.1 0.0 1.2 0 0 0</pose>
+      <pose>-0.1 0.0 1.3 0 0 0</pose>
       <inertial>
         <mass>0.004</mass>
         <inertia>
@@ -381,7 +381,7 @@
       </visual>
     </link>
     <link name="mass_x0_y0">
-      <pose>0.0 0.0 1.2 0 0 0</pose>
+      <pose>0.0 0.0 1.3 0 0 0</pose>
       <inertial>
         <mass>0.004</mass>
         <inertia>
@@ -412,7 +412,7 @@
       </visual>
     </link>
     <link name="mass_x1_y0">
-      <pose>0.1 0.0 1.2 0 0 0</pose>
+      <pose>0.1 0.0 1.3 0 0 0</pose>
       <inertial>
         <mass>0.004</mass>
         <inertia>
@@ -443,7 +443,7 @@
       </visual>
     </link>
     <link name="mass_x2_y0">
-      <pose>0.2 0.0 1.2 0 0 0</pose>
+      <pose>0.2 0.0 1.3 0 0 0</pose>
       <inertial>
         <mass>0.004</mass>
         <inertia>
@@ -474,7 +474,7 @@
       </visual>
     </link>
     <link name="mass_x-2_y1">
-      <pose>-0.2 0.1 1.2 0 0 0</pose>
+      <pose>-0.2 0.1 1.3 0 0 0</pose>
       <inertial>
         <mass>0.004</mass>
         <inertia>
@@ -505,7 +505,7 @@
       </visual>
     </link>
     <link name="mass_x-1_y1">
-      <pose>-0.1 0.1 1.2 0 0 0</pose>
+      <pose>-0.1 0.1 1.3 0 0 0</pose>
       <inertial>
         <mass>0.004</mass>
         <inertia>
@@ -536,7 +536,7 @@
       </visual>
     </link>
     <link name="mass_x0_y1">
-      <pose>0.0 0.1 1.2 0 0 0</pose>
+      <pose>0.0 0.1 1.3 0 0 0</pose>
       <inertial>
         <mass>0.004</mass>
         <inertia>
@@ -567,7 +567,7 @@
       </visual>
     </link>
     <link name="mass_x1_y1">
-      <pose>0.1 0.1 1.2 0 0 0</pose>
+      <pose>0.1 0.1 1.3 0 0 0</pose>
       <inertial>
         <mass>0.004</mass>
         <inertia>
@@ -598,7 +598,7 @@
       </visual>
     </link>
     <link name="mass_x2_y1">
-      <pose>0.2 0.1 1.2 0 0 0</pose>
+      <pose>0.2 0.1 1.3 0 0 0</pose>
       <inertial>
         <mass>0.004</mass>
         <inertia>
@@ -629,7 +629,7 @@
       </visual>
     </link>
     <link name="mass_x-2_y2">
-      <pose>-0.2 0.2 1.2 0 0 0</pose>
+      <pose>-0.2 0.2 1.3 0 0 0</pose>
       <inertial>
         <mass>0.004</mass>
         <inertia>
@@ -660,7 +660,7 @@
       </visual>
     </link>
     <link name="mass_x-1_y2">
-      <pose>-0.1 0.2 1.2 0 0 0</pose>
+      <pose>-0.1 0.2 1.3 0 0 0</pose>
       <inertial>
         <mass>0.004</mass>
         <inertia>
@@ -691,7 +691,7 @@
       </visual>
     </link>
     <link name="mass_x0_y2">
-      <pose>0.0 0.2 1.2 0 0 0</pose>
+      <pose>0.0 0.2 1.3 0 0 0</pose>
       <inertial>
         <mass>0.004</mass>
         <inertia>
@@ -722,7 +722,7 @@
       </visual>
     </link>
     <link name="mass_x1_y2">
-      <pose>0.1 0.2 1.2 0 0 0</pose>
+      <pose>0.1 0.2 1.3 0 0 0</pose>
       <inertial>
         <mass>0.004</mass>
         <inertia>
@@ -753,7 +753,7 @@
       </visual>
     </link>
     <link name="mass_x2_y2">
-      <pose>0.2 0.2 1.2 0 0 0</pose>
+      <pose>0.2 0.2 1.3 0 0 0</pose>
       <inertial>
         <mass>0.004</mass>
         <inertia>
@@ -799,15 +799,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x-1_y-1">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
@@ -828,15 +828,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x-2_y-1">0.05 -0.05 0 0 0 2.356194490192345</pose>
@@ -847,15 +847,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x0_y-1">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
@@ -876,15 +876,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x-1_y-1">0.05 -0.05 0 0 0 2.356194490192345</pose>
@@ -895,15 +895,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x1_y-1">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
@@ -924,15 +924,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x0_y-1">0.05 -0.05 0 0 0 2.356194490192345</pose>
@@ -943,15 +943,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x2_y-1">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
@@ -967,15 +967,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x1_y-1">0.05 -0.05 0 0 0 2.356194490192345</pose>
@@ -996,15 +996,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x-1_y0">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
@@ -1025,15 +1025,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x-2_y0">0.05 -0.05 0 0 0 2.356194490192345</pose>
@@ -1044,15 +1044,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x0_y0">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
@@ -1073,15 +1073,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x-1_y0">0.05 -0.05 0 0 0 2.356194490192345</pose>
@@ -1092,15 +1092,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x1_y0">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
@@ -1121,15 +1121,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x0_y0">0.05 -0.05 0 0 0 2.356194490192345</pose>
@@ -1140,15 +1140,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x2_y0">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
@@ -1164,15 +1164,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x1_y0">0.05 -0.05 0 0 0 2.356194490192345</pose>
@@ -1193,15 +1193,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x-1_y1">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
@@ -1222,15 +1222,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x-2_y1">0.05 -0.05 0 0 0 2.356194490192345</pose>
@@ -1241,15 +1241,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x0_y1">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
@@ -1270,15 +1270,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x-1_y1">0.05 -0.05 0 0 0 2.356194490192345</pose>
@@ -1289,15 +1289,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x1_y1">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
@@ -1318,15 +1318,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x0_y1">0.05 -0.05 0 0 0 2.356194490192345</pose>
@@ -1337,15 +1337,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x2_y1">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
@@ -1361,15 +1361,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x1_y1">0.05 -0.05 0 0 0 2.356194490192345</pose>
@@ -1390,15 +1390,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x-1_y2">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
@@ -1419,15 +1419,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x-2_y2">0.05 -0.05 0 0 0 2.356194490192345</pose>
@@ -1438,15 +1438,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x0_y2">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
@@ -1467,15 +1467,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x-1_y2">0.05 -0.05 0 0 0 2.356194490192345</pose>
@@ -1486,15 +1486,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x1_y2">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
@@ -1515,15 +1515,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x0_y2">0.05 -0.05 0 0 0 2.356194490192345</pose>
@@ -1534,15 +1534,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x2_y2">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
@@ -1558,15 +1558,15 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.001</damping>
-          <spring_stiffness>0.01</spring_stiffness>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
       <pose relative_to="mass_x1_y2">0.05 -0.05 0 0 0 2.356194490192345</pose>
@@ -1590,10 +1590,6 @@
       <parent>mass_x1_y2</parent>
       <child>mass_x2_y2</child>
       <pose relative_to="mass_x2_y2">-0.05 0 0 0 0 0</pose>
-    </joint>
-    <joint name="fixed_joint_mass_x0_y0_to_world" type="fixed">
-      <parent>world</parent>
-      <child>mass_x0_y0</child>
     </joint>
   </model>
 </sdf>
