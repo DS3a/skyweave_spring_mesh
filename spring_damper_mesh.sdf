@@ -1,15 +1,263 @@
 <sdf version="1.7">
   <model name="spring_damper_mesh">
 
-      <plugin name="skyweave_link_tracker" filename="libskyweave_link_tracker.so">
+  <plugin name="skyweave_link_tracker" filename="libskyweave_link_tracker.so">
   <print_rate>50.0</print_rate>
   <link_name_prefix>mass_</link_name_prefix>
 </plugin>
     <static>false</static>
-    <link name="mass_x-2_y-2">
+    <link name="mass_x-3_y-3">
       <pose>-0.2 -0.2 1.3 0 0 0</pose>
       <inertial>
-        <mass>0.004</mass>
+        <mass>0.0020408163265306124</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x-3_y-3">
+        <geometry>
+          <sphere>
+            <radius>0.001</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x-3_y-3">
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+        </material>
+        <geometry>
+          <box>
+            <size>0.015 0.015 0.015</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <link name="mass_x-2_y-3">
+      <pose>-0.13333333333333333 -0.2 1.3 0 0 0</pose>
+      <inertial>
+        <mass>0.0020408163265306124</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x-2_y-3">
+        <geometry>
+          <sphere>
+            <radius>0.001</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x-2_y-3">
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+        </material>
+        <geometry>
+          <box>
+            <size>0.015 0.015 0.015</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <link name="mass_x-1_y-3">
+      <pose>-0.06666666666666667 -0.2 1.3 0 0 0</pose>
+      <inertial>
+        <mass>0.0020408163265306124</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x-1_y-3">
+        <geometry>
+          <sphere>
+            <radius>0.001</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x-1_y-3">
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+        </material>
+        <geometry>
+          <box>
+            <size>0.015 0.015 0.015</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <link name="mass_x0_y-3">
+      <pose>0.0 -0.2 1.3 0 0 0</pose>
+      <inertial>
+        <mass>0.0020408163265306124</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x0_y-3">
+        <geometry>
+          <sphere>
+            <radius>0.001</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x0_y-3">
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+        </material>
+        <geometry>
+          <box>
+            <size>0.015 0.015 0.015</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <link name="mass_x1_y-3">
+      <pose>0.06666666666666667 -0.2 1.3 0 0 0</pose>
+      <inertial>
+        <mass>0.0020408163265306124</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x1_y-3">
+        <geometry>
+          <sphere>
+            <radius>0.001</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x1_y-3">
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+        </material>
+        <geometry>
+          <box>
+            <size>0.015 0.015 0.015</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <link name="mass_x2_y-3">
+      <pose>0.13333333333333333 -0.2 1.3 0 0 0</pose>
+      <inertial>
+        <mass>0.0020408163265306124</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x2_y-3">
+        <geometry>
+          <sphere>
+            <radius>0.001</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x2_y-3">
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+        </material>
+        <geometry>
+          <box>
+            <size>0.015 0.015 0.015</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <link name="mass_x3_y-3">
+      <pose>0.2 -0.2 1.3 0 0 0</pose>
+      <inertial>
+        <mass>0.0020408163265306124</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x3_y-3">
+        <geometry>
+          <sphere>
+            <radius>0.001</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x3_y-3">
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+        </material>
+        <geometry>
+          <box>
+            <size>0.015 0.015 0.015</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <link name="mass_x-3_y-2">
+      <pose>-0.2 -0.13333333333333333 1.3 0 0 0</pose>
+      <inertial>
+        <mass>0.0020408163265306124</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x-3_y-2">
+        <geometry>
+          <sphere>
+            <radius>0.001</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x-3_y-2">
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+        </material>
+        <geometry>
+          <box>
+            <size>0.015 0.015 0.015</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <link name="mass_x-2_y-2">
+      <pose>-0.13333333333333333 -0.13333333333333333 1.3 0 0 0</pose>
+      <inertial>
+        <mass>0.0020408163265306124</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
@@ -38,9 +286,9 @@
       </visual>
     </link>
     <link name="mass_x-1_y-2">
-      <pose>-0.1 -0.2 1.3 0 0 0</pose>
+      <pose>-0.06666666666666667 -0.13333333333333333 1.3 0 0 0</pose>
       <inertial>
-        <mass>0.004</mass>
+        <mass>0.0020408163265306124</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
@@ -69,9 +317,9 @@
       </visual>
     </link>
     <link name="mass_x0_y-2">
-      <pose>0.0 -0.2 1.3 0 0 0</pose>
+      <pose>0.0 -0.13333333333333333 1.3 0 0 0</pose>
       <inertial>
-        <mass>0.004</mass>
+        <mass>0.0020408163265306124</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
@@ -100,9 +348,9 @@
       </visual>
     </link>
     <link name="mass_x1_y-2">
-      <pose>0.1 -0.2 1.3 0 0 0</pose>
+      <pose>0.06666666666666667 -0.13333333333333333 1.3 0 0 0</pose>
       <inertial>
-        <mass>0.004</mass>
+        <mass>0.0020408163265306124</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
@@ -131,9 +379,9 @@
       </visual>
     </link>
     <link name="mass_x2_y-2">
-      <pose>0.2 -0.2 1.3 0 0 0</pose>
+      <pose>0.13333333333333333 -0.13333333333333333 1.3 0 0 0</pose>
       <inertial>
-        <mass>0.004</mass>
+        <mass>0.0020408163265306124</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
@@ -161,10 +409,72 @@
         </geometry>
       </visual>
     </link>
-    <link name="mass_x-2_y-1">
-      <pose>-0.2 -0.1 1.3 0 0 0</pose>
+    <link name="mass_x3_y-2">
+      <pose>0.2 -0.13333333333333333 1.3 0 0 0</pose>
       <inertial>
-        <mass>0.004</mass>
+        <mass>0.0020408163265306124</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x3_y-2">
+        <geometry>
+          <sphere>
+            <radius>0.001</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x3_y-2">
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+        </material>
+        <geometry>
+          <box>
+            <size>0.015 0.015 0.015</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <link name="mass_x-3_y-1">
+      <pose>-0.2 -0.06666666666666667 1.3 0 0 0</pose>
+      <inertial>
+        <mass>0.0020408163265306124</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x-3_y-1">
+        <geometry>
+          <sphere>
+            <radius>0.001</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x-3_y-1">
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+        </material>
+        <geometry>
+          <box>
+            <size>0.015 0.015 0.015</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <link name="mass_x-2_y-1">
+      <pose>-0.13333333333333333 -0.06666666666666667 1.3 0 0 0</pose>
+      <inertial>
+        <mass>0.0020408163265306124</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
@@ -193,9 +503,9 @@
       </visual>
     </link>
     <link name="mass_x-1_y-1">
-      <pose>-0.1 -0.1 1.3 0 0 0</pose>
+      <pose>-0.06666666666666667 -0.06666666666666667 1.3 0 0 0</pose>
       <inertial>
-        <mass>0.004</mass>
+        <mass>0.0020408163265306124</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
@@ -224,9 +534,9 @@
       </visual>
     </link>
     <link name="mass_x0_y-1">
-      <pose>0.0 -0.1 1.3 0 0 0</pose>
+      <pose>0.0 -0.06666666666666667 1.3 0 0 0</pose>
       <inertial>
-        <mass>0.004</mass>
+        <mass>0.0020408163265306124</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
@@ -255,9 +565,9 @@
       </visual>
     </link>
     <link name="mass_x1_y-1">
-      <pose>0.1 -0.1 1.3 0 0 0</pose>
+      <pose>0.06666666666666667 -0.06666666666666667 1.3 0 0 0</pose>
       <inertial>
-        <mass>0.004</mass>
+        <mass>0.0020408163265306124</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
@@ -286,9 +596,9 @@
       </visual>
     </link>
     <link name="mass_x2_y-1">
-      <pose>0.2 -0.1 1.3 0 0 0</pose>
+      <pose>0.13333333333333333 -0.06666666666666667 1.3 0 0 0</pose>
       <inertial>
-        <mass>0.004</mass>
+        <mass>0.0020408163265306124</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
@@ -316,10 +626,72 @@
         </geometry>
       </visual>
     </link>
-    <link name="mass_x-2_y0">
+    <link name="mass_x3_y-1">
+      <pose>0.2 -0.06666666666666667 1.3 0 0 0</pose>
+      <inertial>
+        <mass>0.0020408163265306124</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x3_y-1">
+        <geometry>
+          <sphere>
+            <radius>0.001</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x3_y-1">
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+        </material>
+        <geometry>
+          <box>
+            <size>0.015 0.015 0.015</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <link name="mass_x-3_y0">
       <pose>-0.2 0.0 1.3 0 0 0</pose>
       <inertial>
-        <mass>0.004</mass>
+        <mass>0.0020408163265306124</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x-3_y0">
+        <geometry>
+          <sphere>
+            <radius>0.001</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x-3_y0">
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+        </material>
+        <geometry>
+          <box>
+            <size>0.015 0.015 0.015</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <link name="mass_x-2_y0">
+      <pose>-0.13333333333333333 0.0 1.3 0 0 0</pose>
+      <inertial>
+        <mass>0.0020408163265306124</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
@@ -348,9 +720,9 @@
       </visual>
     </link>
     <link name="mass_x-1_y0">
-      <pose>-0.1 0.0 1.3 0 0 0</pose>
+      <pose>-0.06666666666666667 0.0 1.3 0 0 0</pose>
       <inertial>
-        <mass>0.004</mass>
+        <mass>0.0020408163265306124</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
@@ -381,7 +753,7 @@
     <link name="mass_x0_y0">
       <pose>0.0 0.0 1.3 0 0 0</pose>
       <inertial>
-        <mass>0.004</mass>
+        <mass>0.0020408163265306124</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
@@ -410,9 +782,9 @@
       </visual>
     </link>
     <link name="mass_x1_y0">
-      <pose>0.1 0.0 1.3 0 0 0</pose>
+      <pose>0.06666666666666667 0.0 1.3 0 0 0</pose>
       <inertial>
-        <mass>0.004</mass>
+        <mass>0.0020408163265306124</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
@@ -441,9 +813,9 @@
       </visual>
     </link>
     <link name="mass_x2_y0">
-      <pose>0.2 0.0 1.3 0 0 0</pose>
+      <pose>0.13333333333333333 0.0 1.3 0 0 0</pose>
       <inertial>
-        <mass>0.004</mass>
+        <mass>0.0020408163265306124</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
@@ -471,10 +843,72 @@
         </geometry>
       </visual>
     </link>
-    <link name="mass_x-2_y1">
-      <pose>-0.2 0.1 1.3 0 0 0</pose>
+    <link name="mass_x3_y0">
+      <pose>0.2 0.0 1.3 0 0 0</pose>
       <inertial>
-        <mass>0.004</mass>
+        <mass>0.0020408163265306124</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x3_y0">
+        <geometry>
+          <sphere>
+            <radius>0.001</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x3_y0">
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+        </material>
+        <geometry>
+          <box>
+            <size>0.015 0.015 0.015</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <link name="mass_x-3_y1">
+      <pose>-0.2 0.06666666666666667 1.3 0 0 0</pose>
+      <inertial>
+        <mass>0.0020408163265306124</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x-3_y1">
+        <geometry>
+          <sphere>
+            <radius>0.001</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x-3_y1">
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+        </material>
+        <geometry>
+          <box>
+            <size>0.015 0.015 0.015</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <link name="mass_x-2_y1">
+      <pose>-0.13333333333333333 0.06666666666666667 1.3 0 0 0</pose>
+      <inertial>
+        <mass>0.0020408163265306124</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
@@ -503,9 +937,9 @@
       </visual>
     </link>
     <link name="mass_x-1_y1">
-      <pose>-0.1 0.1 1.3 0 0 0</pose>
+      <pose>-0.06666666666666667 0.06666666666666667 1.3 0 0 0</pose>
       <inertial>
-        <mass>0.004</mass>
+        <mass>0.0020408163265306124</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
@@ -534,9 +968,9 @@
       </visual>
     </link>
     <link name="mass_x0_y1">
-      <pose>0.0 0.1 1.3 0 0 0</pose>
+      <pose>0.0 0.06666666666666667 1.3 0 0 0</pose>
       <inertial>
-        <mass>0.004</mass>
+        <mass>0.0020408163265306124</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
@@ -565,9 +999,9 @@
       </visual>
     </link>
     <link name="mass_x1_y1">
-      <pose>0.1 0.1 1.3 0 0 0</pose>
+      <pose>0.06666666666666667 0.06666666666666667 1.3 0 0 0</pose>
       <inertial>
-        <mass>0.004</mass>
+        <mass>0.0020408163265306124</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
@@ -596,9 +1030,9 @@
       </visual>
     </link>
     <link name="mass_x2_y1">
-      <pose>0.2 0.1 1.3 0 0 0</pose>
+      <pose>0.13333333333333333 0.06666666666666667 1.3 0 0 0</pose>
       <inertial>
-        <mass>0.004</mass>
+        <mass>0.0020408163265306124</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
@@ -626,10 +1060,72 @@
         </geometry>
       </visual>
     </link>
-    <link name="mass_x-2_y2">
-      <pose>-0.2 0.2 1.3 0 0 0</pose>
+    <link name="mass_x3_y1">
+      <pose>0.2 0.06666666666666667 1.3 0 0 0</pose>
       <inertial>
-        <mass>0.004</mass>
+        <mass>0.0020408163265306124</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x3_y1">
+        <geometry>
+          <sphere>
+            <radius>0.001</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x3_y1">
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+        </material>
+        <geometry>
+          <box>
+            <size>0.015 0.015 0.015</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <link name="mass_x-3_y2">
+      <pose>-0.2 0.13333333333333333 1.3 0 0 0</pose>
+      <inertial>
+        <mass>0.0020408163265306124</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x-3_y2">
+        <geometry>
+          <sphere>
+            <radius>0.001</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x-3_y2">
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+        </material>
+        <geometry>
+          <box>
+            <size>0.015 0.015 0.015</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <link name="mass_x-2_y2">
+      <pose>-0.13333333333333333 0.13333333333333333 1.3 0 0 0</pose>
+      <inertial>
+        <mass>0.0020408163265306124</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
@@ -658,9 +1154,9 @@
       </visual>
     </link>
     <link name="mass_x-1_y2">
-      <pose>-0.1 0.2 1.3 0 0 0</pose>
+      <pose>-0.06666666666666667 0.13333333333333333 1.3 0 0 0</pose>
       <inertial>
-        <mass>0.004</mass>
+        <mass>0.0020408163265306124</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
@@ -689,9 +1185,9 @@
       </visual>
     </link>
     <link name="mass_x0_y2">
-      <pose>0.0 0.2 1.3 0 0 0</pose>
+      <pose>0.0 0.13333333333333333 1.3 0 0 0</pose>
       <inertial>
-        <mass>0.004</mass>
+        <mass>0.0020408163265306124</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
@@ -720,9 +1216,9 @@
       </visual>
     </link>
     <link name="mass_x1_y2">
-      <pose>0.1 0.2 1.3 0 0 0</pose>
+      <pose>0.06666666666666667 0.13333333333333333 1.3 0 0 0</pose>
       <inertial>
-        <mass>0.004</mass>
+        <mass>0.0020408163265306124</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
@@ -751,9 +1247,9 @@
       </visual>
     </link>
     <link name="mass_x2_y2">
-      <pose>0.2 0.2 1.3 0 0 0</pose>
+      <pose>0.13333333333333333 0.13333333333333333 1.3 0 0 0</pose>
       <inertial>
-        <mass>0.004</mass>
+        <mass>0.0020408163265306124</mass>
         <inertia>
           <ixx>1e-5</ixx>
           <ixy>0</ixy>
@@ -781,15 +1277,604 @@
         </geometry>
       </visual>
     </link>
+    <link name="mass_x3_y2">
+      <pose>0.2 0.13333333333333333 1.3 0 0 0</pose>
+      <inertial>
+        <mass>0.0020408163265306124</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x3_y2">
+        <geometry>
+          <sphere>
+            <radius>0.001</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x3_y2">
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+        </material>
+        <geometry>
+          <box>
+            <size>0.015 0.015 0.015</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <link name="mass_x-3_y3">
+      <pose>-0.2 0.2 1.3 0 0 0</pose>
+      <inertial>
+        <mass>0.0020408163265306124</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x-3_y3">
+        <geometry>
+          <sphere>
+            <radius>0.001</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x-3_y3">
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+        </material>
+        <geometry>
+          <box>
+            <size>0.015 0.015 0.015</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <link name="mass_x-2_y3">
+      <pose>-0.13333333333333333 0.2 1.3 0 0 0</pose>
+      <inertial>
+        <mass>0.0020408163265306124</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x-2_y3">
+        <geometry>
+          <sphere>
+            <radius>0.001</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x-2_y3">
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+        </material>
+        <geometry>
+          <box>
+            <size>0.015 0.015 0.015</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <link name="mass_x-1_y3">
+      <pose>-0.06666666666666667 0.2 1.3 0 0 0</pose>
+      <inertial>
+        <mass>0.0020408163265306124</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x-1_y3">
+        <geometry>
+          <sphere>
+            <radius>0.001</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x-1_y3">
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+        </material>
+        <geometry>
+          <box>
+            <size>0.015 0.015 0.015</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <link name="mass_x0_y3">
+      <pose>0.0 0.2 1.3 0 0 0</pose>
+      <inertial>
+        <mass>0.0020408163265306124</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x0_y3">
+        <geometry>
+          <sphere>
+            <radius>0.001</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x0_y3">
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+        </material>
+        <geometry>
+          <box>
+            <size>0.015 0.015 0.015</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <link name="mass_x1_y3">
+      <pose>0.06666666666666667 0.2 1.3 0 0 0</pose>
+      <inertial>
+        <mass>0.0020408163265306124</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x1_y3">
+        <geometry>
+          <sphere>
+            <radius>0.001</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x1_y3">
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+        </material>
+        <geometry>
+          <box>
+            <size>0.015 0.015 0.015</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <link name="mass_x2_y3">
+      <pose>0.13333333333333333 0.2 1.3 0 0 0</pose>
+      <inertial>
+        <mass>0.0020408163265306124</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x2_y3">
+        <geometry>
+          <sphere>
+            <radius>0.001</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x2_y3">
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+        </material>
+        <geometry>
+          <box>
+            <size>0.015 0.015 0.015</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <link name="mass_x3_y3">
+      <pose>0.2 0.2 1.3 0 0 0</pose>
+      <inertial>
+        <mass>0.0020408163265306124</mass>
+        <inertia>
+          <ixx>1e-5</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>1e-5</iyy>
+          <iyz>0</iyz>
+          <izz>1e-5</izz>
+        </inertia>
+      </inertial>
+      <collision name="collision_x3_y3">
+        <geometry>
+          <sphere>
+            <radius>0.001</radius>
+          </sphere>
+        </geometry>
+      </collision>
+      <visual name="visual_x3_y3">
+        <material>
+          <diffuse>0 1 0 1</diffuse>
+        </material>
+        <geometry>
+          <box>
+            <size>0.015 0.015 0.015</size>
+          </box>
+        </geometry>
+      </visual>
+    </link>
+    <joint name="N_x-3_y-3_to_x-2_y-3" type="ball">
+      <parent>mass_x-3_y-3</parent>
+      <child>mass_x-2_y-3</child>
+      <pose relative_to="mass_x-2_y-3">-0.03333333333333333 0 0 0 0 0</pose>
+    </joint>
+    <joint name="W_x-3_y-3_to_x-3_y-2" type="ball">
+      <parent>mass_x-3_y-3</parent>
+      <child>mass_x-3_y-2</child>
+      <pose relative_to="mass_x-3_y-2">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="NW_x-3_y-3_to_x-2_y-2" type="universal">
+      <parent>mass_x-3_y-3</parent>
+      <child>mass_x-2_y-2</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x-2_y-2">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
+    </joint>
+    <joint name="N_x-2_y-3_to_x-1_y-3" type="ball">
+      <parent>mass_x-2_y-3</parent>
+      <child>mass_x-1_y-3</child>
+      <pose relative_to="mass_x-1_y-3">-0.03333333333333333 0 0 0 0 0</pose>
+    </joint>
+    <joint name="W_x-2_y-3_to_x-2_y-2" type="ball">
+      <parent>mass_x-2_y-3</parent>
+      <child>mass_x-2_y-2</child>
+      <pose relative_to="mass_x-2_y-2">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="SW_x-2_y-3_to_x-3_y-2" type="universal">
+      <parent>mass_x-2_y-3</parent>
+      <child>mass_x-3_y-2</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x-3_y-2">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
+    </joint>
+    <joint name="NW_x-2_y-3_to_x-1_y-2" type="universal">
+      <parent>mass_x-2_y-3</parent>
+      <child>mass_x-1_y-2</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x-1_y-2">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
+    </joint>
+    <joint name="N_x-1_y-3_to_x0_y-3" type="ball">
+      <parent>mass_x-1_y-3</parent>
+      <child>mass_x0_y-3</child>
+      <pose relative_to="mass_x0_y-3">-0.03333333333333333 0 0 0 0 0</pose>
+    </joint>
+    <joint name="W_x-1_y-3_to_x-1_y-2" type="ball">
+      <parent>mass_x-1_y-3</parent>
+      <child>mass_x-1_y-2</child>
+      <pose relative_to="mass_x-1_y-2">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="SW_x-1_y-3_to_x-2_y-2" type="universal">
+      <parent>mass_x-1_y-3</parent>
+      <child>mass_x-2_y-2</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x-2_y-2">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
+    </joint>
+    <joint name="NW_x-1_y-3_to_x0_y-2" type="universal">
+      <parent>mass_x-1_y-3</parent>
+      <child>mass_x0_y-2</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x0_y-2">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
+    </joint>
+    <joint name="N_x0_y-3_to_x1_y-3" type="ball">
+      <parent>mass_x0_y-3</parent>
+      <child>mass_x1_y-3</child>
+      <pose relative_to="mass_x1_y-3">-0.03333333333333333 0 0 0 0 0</pose>
+    </joint>
+    <joint name="W_x0_y-3_to_x0_y-2" type="ball">
+      <parent>mass_x0_y-3</parent>
+      <child>mass_x0_y-2</child>
+      <pose relative_to="mass_x0_y-2">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="SW_x0_y-3_to_x-1_y-2" type="universal">
+      <parent>mass_x0_y-3</parent>
+      <child>mass_x-1_y-2</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x-1_y-2">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
+    </joint>
+    <joint name="NW_x0_y-3_to_x1_y-2" type="universal">
+      <parent>mass_x0_y-3</parent>
+      <child>mass_x1_y-2</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x1_y-2">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
+    </joint>
+    <joint name="N_x1_y-3_to_x2_y-3" type="ball">
+      <parent>mass_x1_y-3</parent>
+      <child>mass_x2_y-3</child>
+      <pose relative_to="mass_x2_y-3">-0.03333333333333333 0 0 0 0 0</pose>
+    </joint>
+    <joint name="W_x1_y-3_to_x1_y-2" type="ball">
+      <parent>mass_x1_y-3</parent>
+      <child>mass_x1_y-2</child>
+      <pose relative_to="mass_x1_y-2">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="SW_x1_y-3_to_x0_y-2" type="universal">
+      <parent>mass_x1_y-3</parent>
+      <child>mass_x0_y-2</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x0_y-2">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
+    </joint>
+    <joint name="NW_x1_y-3_to_x2_y-2" type="universal">
+      <parent>mass_x1_y-3</parent>
+      <child>mass_x2_y-2</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x2_y-2">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
+    </joint>
+    <joint name="N_x2_y-3_to_x3_y-3" type="ball">
+      <parent>mass_x2_y-3</parent>
+      <child>mass_x3_y-3</child>
+      <pose relative_to="mass_x3_y-3">-0.03333333333333333 0 0 0 0 0</pose>
+    </joint>
+    <joint name="W_x2_y-3_to_x2_y-2" type="ball">
+      <parent>mass_x2_y-3</parent>
+      <child>mass_x2_y-2</child>
+      <pose relative_to="mass_x2_y-2">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="SW_x2_y-3_to_x1_y-2" type="universal">
+      <parent>mass_x2_y-3</parent>
+      <child>mass_x1_y-2</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x1_y-2">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
+    </joint>
+    <joint name="NW_x2_y-3_to_x3_y-2" type="universal">
+      <parent>mass_x2_y-3</parent>
+      <child>mass_x3_y-2</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x3_y-2">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
+    </joint>
+    <joint name="W_x3_y-3_to_x3_y-2" type="ball">
+      <parent>mass_x3_y-3</parent>
+      <child>mass_x3_y-2</child>
+      <pose relative_to="mass_x3_y-2">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="SW_x3_y-3_to_x2_y-2" type="universal">
+      <parent>mass_x3_y-3</parent>
+      <child>mass_x2_y-2</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x2_y-2">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
+    </joint>
+    <joint name="N_x-3_y-2_to_x-2_y-2" type="ball">
+      <parent>mass_x-3_y-2</parent>
+      <child>mass_x-2_y-2</child>
+      <pose relative_to="mass_x-2_y-2">-0.03333333333333333 0 0 0 0 0</pose>
+    </joint>
+    <joint name="W_x-3_y-2_to_x-3_y-1" type="ball">
+      <parent>mass_x-3_y-2</parent>
+      <child>mass_x-3_y-1</child>
+      <pose relative_to="mass_x-3_y-1">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="NW_x-3_y-2_to_x-2_y-1" type="universal">
+      <parent>mass_x-3_y-2</parent>
+      <child>mass_x-2_y-1</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x-2_y-1">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
+    </joint>
     <joint name="N_x-2_y-2_to_x-1_y-2" type="ball">
       <parent>mass_x-2_y-2</parent>
       <child>mass_x-1_y-2</child>
-      <pose relative_to="mass_x-1_y-2">-0.05 0 0 0 0 0</pose>
+      <pose relative_to="mass_x-1_y-2">-0.03333333333333333 0 0 0 0 0</pose>
     </joint>
     <joint name="W_x-2_y-2_to_x-2_y-1" type="ball">
       <parent>mass_x-2_y-2</parent>
       <child>mass_x-2_y-1</child>
-      <pose relative_to="mass_x-2_y-1">0 -0.05 0 0 0 1.5707963267948966</pose>
+      <pose relative_to="mass_x-2_y-1">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="SW_x-2_y-2_to_x-3_y-1" type="universal">
+      <parent>mass_x-2_y-2</parent>
+      <child>mass_x-3_y-1</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x-3_y-1">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
     </joint>
     <joint name="NW_x-2_y-2_to_x-1_y-1" type="universal">
       <parent>mass_x-2_y-2</parent>
@@ -808,17 +1893,17 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x-1_y-1">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
+      <pose relative_to="mass_x-1_y-1">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x-1_y-2_to_x0_y-2" type="ball">
       <parent>mass_x-1_y-2</parent>
       <child>mass_x0_y-2</child>
-      <pose relative_to="mass_x0_y-2">-0.05 0 0 0 0 0</pose>
+      <pose relative_to="mass_x0_y-2">-0.03333333333333333 0 0 0 0 0</pose>
     </joint>
     <joint name="W_x-1_y-2_to_x-1_y-1" type="ball">
       <parent>mass_x-1_y-2</parent>
       <child>mass_x-1_y-1</child>
-      <pose relative_to="mass_x-1_y-1">0 -0.05 0 0 0 1.5707963267948966</pose>
+      <pose relative_to="mass_x-1_y-1">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
     </joint>
     <joint name="SW_x-1_y-2_to_x-2_y-1" type="universal">
       <parent>mass_x-1_y-2</parent>
@@ -837,7 +1922,7 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x-2_y-1">0.05 -0.05 0 0 0 2.356194490192345</pose>
+      <pose relative_to="mass_x-2_y-1">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
     </joint>
     <joint name="NW_x-1_y-2_to_x0_y-1" type="universal">
       <parent>mass_x-1_y-2</parent>
@@ -856,17 +1941,17 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x0_y-1">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
+      <pose relative_to="mass_x0_y-1">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x0_y-2_to_x1_y-2" type="ball">
       <parent>mass_x0_y-2</parent>
       <child>mass_x1_y-2</child>
-      <pose relative_to="mass_x1_y-2">-0.05 0 0 0 0 0</pose>
+      <pose relative_to="mass_x1_y-2">-0.03333333333333333 0 0 0 0 0</pose>
     </joint>
     <joint name="W_x0_y-2_to_x0_y-1" type="ball">
       <parent>mass_x0_y-2</parent>
       <child>mass_x0_y-1</child>
-      <pose relative_to="mass_x0_y-1">0 -0.05 0 0 0 1.5707963267948966</pose>
+      <pose relative_to="mass_x0_y-1">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
     </joint>
     <joint name="SW_x0_y-2_to_x-1_y-1" type="universal">
       <parent>mass_x0_y-2</parent>
@@ -885,7 +1970,7 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x-1_y-1">0.05 -0.05 0 0 0 2.356194490192345</pose>
+      <pose relative_to="mass_x-1_y-1">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
     </joint>
     <joint name="NW_x0_y-2_to_x1_y-1" type="universal">
       <parent>mass_x0_y-2</parent>
@@ -904,17 +1989,17 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x1_y-1">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
+      <pose relative_to="mass_x1_y-1">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x1_y-2_to_x2_y-2" type="ball">
       <parent>mass_x1_y-2</parent>
       <child>mass_x2_y-2</child>
-      <pose relative_to="mass_x2_y-2">-0.05 0 0 0 0 0</pose>
+      <pose relative_to="mass_x2_y-2">-0.03333333333333333 0 0 0 0 0</pose>
     </joint>
     <joint name="W_x1_y-2_to_x1_y-1" type="ball">
       <parent>mass_x1_y-2</parent>
       <child>mass_x1_y-1</child>
-      <pose relative_to="mass_x1_y-1">0 -0.05 0 0 0 1.5707963267948966</pose>
+      <pose relative_to="mass_x1_y-1">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
     </joint>
     <joint name="SW_x1_y-2_to_x0_y-1" type="universal">
       <parent>mass_x1_y-2</parent>
@@ -933,7 +2018,7 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x0_y-1">0.05 -0.05 0 0 0 2.356194490192345</pose>
+      <pose relative_to="mass_x0_y-1">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
     </joint>
     <joint name="NW_x1_y-2_to_x2_y-1" type="universal">
       <parent>mass_x1_y-2</parent>
@@ -952,12 +2037,17 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x2_y-1">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
+      <pose relative_to="mass_x2_y-1">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
+    </joint>
+    <joint name="N_x2_y-2_to_x3_y-2" type="ball">
+      <parent>mass_x2_y-2</parent>
+      <child>mass_x3_y-2</child>
+      <pose relative_to="mass_x3_y-2">-0.03333333333333333 0 0 0 0 0</pose>
     </joint>
     <joint name="W_x2_y-2_to_x2_y-1" type="ball">
       <parent>mass_x2_y-2</parent>
       <child>mass_x2_y-1</child>
-      <pose relative_to="mass_x2_y-1">0 -0.05 0 0 0 1.5707963267948966</pose>
+      <pose relative_to="mass_x2_y-1">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
     </joint>
     <joint name="SW_x2_y-2_to_x1_y-1" type="universal">
       <parent>mass_x2_y-2</parent>
@@ -976,17 +2066,108 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x1_y-1">0.05 -0.05 0 0 0 2.356194490192345</pose>
+      <pose relative_to="mass_x1_y-1">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
+    </joint>
+    <joint name="NW_x2_y-2_to_x3_y-1" type="universal">
+      <parent>mass_x2_y-2</parent>
+      <child>mass_x3_y-1</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x3_y-1">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
+    </joint>
+    <joint name="W_x3_y-2_to_x3_y-1" type="ball">
+      <parent>mass_x3_y-2</parent>
+      <child>mass_x3_y-1</child>
+      <pose relative_to="mass_x3_y-1">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="SW_x3_y-2_to_x2_y-1" type="universal">
+      <parent>mass_x3_y-2</parent>
+      <child>mass_x2_y-1</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x2_y-1">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
+    </joint>
+    <joint name="N_x-3_y-1_to_x-2_y-1" type="ball">
+      <parent>mass_x-3_y-1</parent>
+      <child>mass_x-2_y-1</child>
+      <pose relative_to="mass_x-2_y-1">-0.03333333333333333 0 0 0 0 0</pose>
+    </joint>
+    <joint name="W_x-3_y-1_to_x-3_y0" type="ball">
+      <parent>mass_x-3_y-1</parent>
+      <child>mass_x-3_y0</child>
+      <pose relative_to="mass_x-3_y0">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="NW_x-3_y-1_to_x-2_y0" type="universal">
+      <parent>mass_x-3_y-1</parent>
+      <child>mass_x-2_y0</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x-2_y0">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x-2_y-1_to_x-1_y-1" type="ball">
       <parent>mass_x-2_y-1</parent>
       <child>mass_x-1_y-1</child>
-      <pose relative_to="mass_x-1_y-1">-0.05 0 0 0 0 0</pose>
+      <pose relative_to="mass_x-1_y-1">-0.03333333333333333 0 0 0 0 0</pose>
     </joint>
     <joint name="W_x-2_y-1_to_x-2_y0" type="ball">
       <parent>mass_x-2_y-1</parent>
       <child>mass_x-2_y0</child>
-      <pose relative_to="mass_x-2_y0">0 -0.05 0 0 0 1.5707963267948966</pose>
+      <pose relative_to="mass_x-2_y0">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="SW_x-2_y-1_to_x-3_y0" type="universal">
+      <parent>mass_x-2_y-1</parent>
+      <child>mass_x-3_y0</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x-3_y0">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
     </joint>
     <joint name="NW_x-2_y-1_to_x-1_y0" type="universal">
       <parent>mass_x-2_y-1</parent>
@@ -1005,17 +2186,17 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x-1_y0">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
+      <pose relative_to="mass_x-1_y0">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x-1_y-1_to_x0_y-1" type="ball">
       <parent>mass_x-1_y-1</parent>
       <child>mass_x0_y-1</child>
-      <pose relative_to="mass_x0_y-1">-0.05 0 0 0 0 0</pose>
+      <pose relative_to="mass_x0_y-1">-0.03333333333333333 0 0 0 0 0</pose>
     </joint>
     <joint name="W_x-1_y-1_to_x-1_y0" type="ball">
       <parent>mass_x-1_y-1</parent>
       <child>mass_x-1_y0</child>
-      <pose relative_to="mass_x-1_y0">0 -0.05 0 0 0 1.5707963267948966</pose>
+      <pose relative_to="mass_x-1_y0">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
     </joint>
     <joint name="SW_x-1_y-1_to_x-2_y0" type="universal">
       <parent>mass_x-1_y-1</parent>
@@ -1034,7 +2215,7 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x-2_y0">0.05 -0.05 0 0 0 2.356194490192345</pose>
+      <pose relative_to="mass_x-2_y0">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
     </joint>
     <joint name="NW_x-1_y-1_to_x0_y0" type="universal">
       <parent>mass_x-1_y-1</parent>
@@ -1053,17 +2234,17 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x0_y0">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
+      <pose relative_to="mass_x0_y0">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x0_y-1_to_x1_y-1" type="ball">
       <parent>mass_x0_y-1</parent>
       <child>mass_x1_y-1</child>
-      <pose relative_to="mass_x1_y-1">-0.05 0 0 0 0 0</pose>
+      <pose relative_to="mass_x1_y-1">-0.03333333333333333 0 0 0 0 0</pose>
     </joint>
     <joint name="W_x0_y-1_to_x0_y0" type="ball">
       <parent>mass_x0_y-1</parent>
       <child>mass_x0_y0</child>
-      <pose relative_to="mass_x0_y0">0 -0.05 0 0 0 1.5707963267948966</pose>
+      <pose relative_to="mass_x0_y0">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
     </joint>
     <joint name="SW_x0_y-1_to_x-1_y0" type="universal">
       <parent>mass_x0_y-1</parent>
@@ -1082,7 +2263,7 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x-1_y0">0.05 -0.05 0 0 0 2.356194490192345</pose>
+      <pose relative_to="mass_x-1_y0">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
     </joint>
     <joint name="NW_x0_y-1_to_x1_y0" type="universal">
       <parent>mass_x0_y-1</parent>
@@ -1101,17 +2282,17 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x1_y0">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
+      <pose relative_to="mass_x1_y0">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x1_y-1_to_x2_y-1" type="ball">
       <parent>mass_x1_y-1</parent>
       <child>mass_x2_y-1</child>
-      <pose relative_to="mass_x2_y-1">-0.05 0 0 0 0 0</pose>
+      <pose relative_to="mass_x2_y-1">-0.03333333333333333 0 0 0 0 0</pose>
     </joint>
     <joint name="W_x1_y-1_to_x1_y0" type="ball">
       <parent>mass_x1_y-1</parent>
       <child>mass_x1_y0</child>
-      <pose relative_to="mass_x1_y0">0 -0.05 0 0 0 1.5707963267948966</pose>
+      <pose relative_to="mass_x1_y0">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
     </joint>
     <joint name="SW_x1_y-1_to_x0_y0" type="universal">
       <parent>mass_x1_y-1</parent>
@@ -1130,7 +2311,7 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x0_y0">0.05 -0.05 0 0 0 2.356194490192345</pose>
+      <pose relative_to="mass_x0_y0">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
     </joint>
     <joint name="NW_x1_y-1_to_x2_y0" type="universal">
       <parent>mass_x1_y-1</parent>
@@ -1149,12 +2330,17 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x2_y0">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
+      <pose relative_to="mass_x2_y0">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
+    </joint>
+    <joint name="N_x2_y-1_to_x3_y-1" type="ball">
+      <parent>mass_x2_y-1</parent>
+      <child>mass_x3_y-1</child>
+      <pose relative_to="mass_x3_y-1">-0.03333333333333333 0 0 0 0 0</pose>
     </joint>
     <joint name="W_x2_y-1_to_x2_y0" type="ball">
       <parent>mass_x2_y-1</parent>
       <child>mass_x2_y0</child>
-      <pose relative_to="mass_x2_y0">0 -0.05 0 0 0 1.5707963267948966</pose>
+      <pose relative_to="mass_x2_y0">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
     </joint>
     <joint name="SW_x2_y-1_to_x1_y0" type="universal">
       <parent>mass_x2_y-1</parent>
@@ -1173,17 +2359,108 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x1_y0">0.05 -0.05 0 0 0 2.356194490192345</pose>
+      <pose relative_to="mass_x1_y0">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
+    </joint>
+    <joint name="NW_x2_y-1_to_x3_y0" type="universal">
+      <parent>mass_x2_y-1</parent>
+      <child>mass_x3_y0</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x3_y0">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
+    </joint>
+    <joint name="W_x3_y-1_to_x3_y0" type="ball">
+      <parent>mass_x3_y-1</parent>
+      <child>mass_x3_y0</child>
+      <pose relative_to="mass_x3_y0">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="SW_x3_y-1_to_x2_y0" type="universal">
+      <parent>mass_x3_y-1</parent>
+      <child>mass_x2_y0</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x2_y0">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
+    </joint>
+    <joint name="N_x-3_y0_to_x-2_y0" type="ball">
+      <parent>mass_x-3_y0</parent>
+      <child>mass_x-2_y0</child>
+      <pose relative_to="mass_x-2_y0">-0.03333333333333333 0 0 0 0 0</pose>
+    </joint>
+    <joint name="W_x-3_y0_to_x-3_y1" type="ball">
+      <parent>mass_x-3_y0</parent>
+      <child>mass_x-3_y1</child>
+      <pose relative_to="mass_x-3_y1">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="NW_x-3_y0_to_x-2_y1" type="universal">
+      <parent>mass_x-3_y0</parent>
+      <child>mass_x-2_y1</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x-2_y1">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x-2_y0_to_x-1_y0" type="ball">
       <parent>mass_x-2_y0</parent>
       <child>mass_x-1_y0</child>
-      <pose relative_to="mass_x-1_y0">-0.05 0 0 0 0 0</pose>
+      <pose relative_to="mass_x-1_y0">-0.03333333333333333 0 0 0 0 0</pose>
     </joint>
     <joint name="W_x-2_y0_to_x-2_y1" type="ball">
       <parent>mass_x-2_y0</parent>
       <child>mass_x-2_y1</child>
-      <pose relative_to="mass_x-2_y1">0 -0.05 0 0 0 1.5707963267948966</pose>
+      <pose relative_to="mass_x-2_y1">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="SW_x-2_y0_to_x-3_y1" type="universal">
+      <parent>mass_x-2_y0</parent>
+      <child>mass_x-3_y1</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x-3_y1">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
     </joint>
     <joint name="NW_x-2_y0_to_x-1_y1" type="universal">
       <parent>mass_x-2_y0</parent>
@@ -1202,17 +2479,17 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x-1_y1">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
+      <pose relative_to="mass_x-1_y1">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x-1_y0_to_x0_y0" type="ball">
       <parent>mass_x-1_y0</parent>
       <child>mass_x0_y0</child>
-      <pose relative_to="mass_x0_y0">-0.05 0 0 0 0 0</pose>
+      <pose relative_to="mass_x0_y0">-0.03333333333333333 0 0 0 0 0</pose>
     </joint>
     <joint name="W_x-1_y0_to_x-1_y1" type="ball">
       <parent>mass_x-1_y0</parent>
       <child>mass_x-1_y1</child>
-      <pose relative_to="mass_x-1_y1">0 -0.05 0 0 0 1.5707963267948966</pose>
+      <pose relative_to="mass_x-1_y1">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
     </joint>
     <joint name="SW_x-1_y0_to_x-2_y1" type="universal">
       <parent>mass_x-1_y0</parent>
@@ -1231,7 +2508,7 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x-2_y1">0.05 -0.05 0 0 0 2.356194490192345</pose>
+      <pose relative_to="mass_x-2_y1">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
     </joint>
     <joint name="NW_x-1_y0_to_x0_y1" type="universal">
       <parent>mass_x-1_y0</parent>
@@ -1250,17 +2527,17 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x0_y1">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
+      <pose relative_to="mass_x0_y1">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x0_y0_to_x1_y0" type="ball">
       <parent>mass_x0_y0</parent>
       <child>mass_x1_y0</child>
-      <pose relative_to="mass_x1_y0">-0.05 0 0 0 0 0</pose>
+      <pose relative_to="mass_x1_y0">-0.03333333333333333 0 0 0 0 0</pose>
     </joint>
     <joint name="W_x0_y0_to_x0_y1" type="ball">
       <parent>mass_x0_y0</parent>
       <child>mass_x0_y1</child>
-      <pose relative_to="mass_x0_y1">0 -0.05 0 0 0 1.5707963267948966</pose>
+      <pose relative_to="mass_x0_y1">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
     </joint>
     <joint name="SW_x0_y0_to_x-1_y1" type="universal">
       <parent>mass_x0_y0</parent>
@@ -1279,7 +2556,7 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x-1_y1">0.05 -0.05 0 0 0 2.356194490192345</pose>
+      <pose relative_to="mass_x-1_y1">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
     </joint>
     <joint name="NW_x0_y0_to_x1_y1" type="universal">
       <parent>mass_x0_y0</parent>
@@ -1298,17 +2575,17 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x1_y1">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
+      <pose relative_to="mass_x1_y1">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x1_y0_to_x2_y0" type="ball">
       <parent>mass_x1_y0</parent>
       <child>mass_x2_y0</child>
-      <pose relative_to="mass_x2_y0">-0.05 0 0 0 0 0</pose>
+      <pose relative_to="mass_x2_y0">-0.03333333333333333 0 0 0 0 0</pose>
     </joint>
     <joint name="W_x1_y0_to_x1_y1" type="ball">
       <parent>mass_x1_y0</parent>
       <child>mass_x1_y1</child>
-      <pose relative_to="mass_x1_y1">0 -0.05 0 0 0 1.5707963267948966</pose>
+      <pose relative_to="mass_x1_y1">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
     </joint>
     <joint name="SW_x1_y0_to_x0_y1" type="universal">
       <parent>mass_x1_y0</parent>
@@ -1327,7 +2604,7 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x0_y1">0.05 -0.05 0 0 0 2.356194490192345</pose>
+      <pose relative_to="mass_x0_y1">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
     </joint>
     <joint name="NW_x1_y0_to_x2_y1" type="universal">
       <parent>mass_x1_y0</parent>
@@ -1346,12 +2623,17 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x2_y1">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
+      <pose relative_to="mass_x2_y1">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
+    </joint>
+    <joint name="N_x2_y0_to_x3_y0" type="ball">
+      <parent>mass_x2_y0</parent>
+      <child>mass_x3_y0</child>
+      <pose relative_to="mass_x3_y0">-0.03333333333333333 0 0 0 0 0</pose>
     </joint>
     <joint name="W_x2_y0_to_x2_y1" type="ball">
       <parent>mass_x2_y0</parent>
       <child>mass_x2_y1</child>
-      <pose relative_to="mass_x2_y1">0 -0.05 0 0 0 1.5707963267948966</pose>
+      <pose relative_to="mass_x2_y1">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
     </joint>
     <joint name="SW_x2_y0_to_x1_y1" type="universal">
       <parent>mass_x2_y0</parent>
@@ -1370,17 +2652,108 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x1_y1">0.05 -0.05 0 0 0 2.356194490192345</pose>
+      <pose relative_to="mass_x1_y1">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
+    </joint>
+    <joint name="NW_x2_y0_to_x3_y1" type="universal">
+      <parent>mass_x2_y0</parent>
+      <child>mass_x3_y1</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x3_y1">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
+    </joint>
+    <joint name="W_x3_y0_to_x3_y1" type="ball">
+      <parent>mass_x3_y0</parent>
+      <child>mass_x3_y1</child>
+      <pose relative_to="mass_x3_y1">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="SW_x3_y0_to_x2_y1" type="universal">
+      <parent>mass_x3_y0</parent>
+      <child>mass_x2_y1</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x2_y1">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
+    </joint>
+    <joint name="N_x-3_y1_to_x-2_y1" type="ball">
+      <parent>mass_x-3_y1</parent>
+      <child>mass_x-2_y1</child>
+      <pose relative_to="mass_x-2_y1">-0.03333333333333333 0 0 0 0 0</pose>
+    </joint>
+    <joint name="W_x-3_y1_to_x-3_y2" type="ball">
+      <parent>mass_x-3_y1</parent>
+      <child>mass_x-3_y2</child>
+      <pose relative_to="mass_x-3_y2">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="NW_x-3_y1_to_x-2_y2" type="universal">
+      <parent>mass_x-3_y1</parent>
+      <child>mass_x-2_y2</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x-2_y2">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x-2_y1_to_x-1_y1" type="ball">
       <parent>mass_x-2_y1</parent>
       <child>mass_x-1_y1</child>
-      <pose relative_to="mass_x-1_y1">-0.05 0 0 0 0 0</pose>
+      <pose relative_to="mass_x-1_y1">-0.03333333333333333 0 0 0 0 0</pose>
     </joint>
     <joint name="W_x-2_y1_to_x-2_y2" type="ball">
       <parent>mass_x-2_y1</parent>
       <child>mass_x-2_y2</child>
-      <pose relative_to="mass_x-2_y2">0 -0.05 0 0 0 1.5707963267948966</pose>
+      <pose relative_to="mass_x-2_y2">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="SW_x-2_y1_to_x-3_y2" type="universal">
+      <parent>mass_x-2_y1</parent>
+      <child>mass_x-3_y2</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x-3_y2">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
     </joint>
     <joint name="NW_x-2_y1_to_x-1_y2" type="universal">
       <parent>mass_x-2_y1</parent>
@@ -1399,17 +2772,17 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x-1_y2">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
+      <pose relative_to="mass_x-1_y2">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x-1_y1_to_x0_y1" type="ball">
       <parent>mass_x-1_y1</parent>
       <child>mass_x0_y1</child>
-      <pose relative_to="mass_x0_y1">-0.05 0 0 0 0 0</pose>
+      <pose relative_to="mass_x0_y1">-0.03333333333333333 0 0 0 0 0</pose>
     </joint>
     <joint name="W_x-1_y1_to_x-1_y2" type="ball">
       <parent>mass_x-1_y1</parent>
       <child>mass_x-1_y2</child>
-      <pose relative_to="mass_x-1_y2">0 -0.05 0 0 0 1.5707963267948966</pose>
+      <pose relative_to="mass_x-1_y2">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
     </joint>
     <joint name="SW_x-1_y1_to_x-2_y2" type="universal">
       <parent>mass_x-1_y1</parent>
@@ -1428,7 +2801,7 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x-2_y2">0.05 -0.05 0 0 0 2.356194490192345</pose>
+      <pose relative_to="mass_x-2_y2">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
     </joint>
     <joint name="NW_x-1_y1_to_x0_y2" type="universal">
       <parent>mass_x-1_y1</parent>
@@ -1447,17 +2820,17 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x0_y2">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
+      <pose relative_to="mass_x0_y2">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x0_y1_to_x1_y1" type="ball">
       <parent>mass_x0_y1</parent>
       <child>mass_x1_y1</child>
-      <pose relative_to="mass_x1_y1">-0.05 0 0 0 0 0</pose>
+      <pose relative_to="mass_x1_y1">-0.03333333333333333 0 0 0 0 0</pose>
     </joint>
     <joint name="W_x0_y1_to_x0_y2" type="ball">
       <parent>mass_x0_y1</parent>
       <child>mass_x0_y2</child>
-      <pose relative_to="mass_x0_y2">0 -0.05 0 0 0 1.5707963267948966</pose>
+      <pose relative_to="mass_x0_y2">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
     </joint>
     <joint name="SW_x0_y1_to_x-1_y2" type="universal">
       <parent>mass_x0_y1</parent>
@@ -1476,7 +2849,7 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x-1_y2">0.05 -0.05 0 0 0 2.356194490192345</pose>
+      <pose relative_to="mass_x-1_y2">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
     </joint>
     <joint name="NW_x0_y1_to_x1_y2" type="universal">
       <parent>mass_x0_y1</parent>
@@ -1495,17 +2868,17 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x1_y2">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
+      <pose relative_to="mass_x1_y2">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x1_y1_to_x2_y1" type="ball">
       <parent>mass_x1_y1</parent>
       <child>mass_x2_y1</child>
-      <pose relative_to="mass_x2_y1">-0.05 0 0 0 0 0</pose>
+      <pose relative_to="mass_x2_y1">-0.03333333333333333 0 0 0 0 0</pose>
     </joint>
     <joint name="W_x1_y1_to_x1_y2" type="ball">
       <parent>mass_x1_y1</parent>
       <child>mass_x1_y2</child>
-      <pose relative_to="mass_x1_y2">0 -0.05 0 0 0 1.5707963267948966</pose>
+      <pose relative_to="mass_x1_y2">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
     </joint>
     <joint name="SW_x1_y1_to_x0_y2" type="universal">
       <parent>mass_x1_y1</parent>
@@ -1524,7 +2897,7 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x0_y2">0.05 -0.05 0 0 0 2.356194490192345</pose>
+      <pose relative_to="mass_x0_y2">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
     </joint>
     <joint name="NW_x1_y1_to_x2_y2" type="universal">
       <parent>mass_x1_y1</parent>
@@ -1543,12 +2916,17 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x2_y2">-0.05 -0.05 0 0 0 0.7853981633974483</pose>
+      <pose relative_to="mass_x2_y2">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
+    </joint>
+    <joint name="N_x2_y1_to_x3_y1" type="ball">
+      <parent>mass_x2_y1</parent>
+      <child>mass_x3_y1</child>
+      <pose relative_to="mass_x3_y1">-0.03333333333333333 0 0 0 0 0</pose>
     </joint>
     <joint name="W_x2_y1_to_x2_y2" type="ball">
       <parent>mass_x2_y1</parent>
       <child>mass_x2_y2</child>
-      <pose relative_to="mass_x2_y2">0 -0.05 0 0 0 1.5707963267948966</pose>
+      <pose relative_to="mass_x2_y2">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
     </joint>
     <joint name="SW_x2_y1_to_x1_y2" type="universal">
       <parent>mass_x2_y1</parent>
@@ -1567,27 +2945,377 @@
           <spring_stiffness>0.05</spring_stiffness>
         </dynamics>
       </axis2>
-      <pose relative_to="mass_x1_y2">0.05 -0.05 0 0 0 2.356194490192345</pose>
+      <pose relative_to="mass_x1_y2">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
+    </joint>
+    <joint name="NW_x2_y1_to_x3_y2" type="universal">
+      <parent>mass_x2_y1</parent>
+      <child>mass_x3_y2</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x3_y2">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
+    </joint>
+    <joint name="W_x3_y1_to_x3_y2" type="ball">
+      <parent>mass_x3_y1</parent>
+      <child>mass_x3_y2</child>
+      <pose relative_to="mass_x3_y2">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="SW_x3_y1_to_x2_y2" type="universal">
+      <parent>mass_x3_y1</parent>
+      <child>mass_x2_y2</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x2_y2">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
+    </joint>
+    <joint name="N_x-3_y2_to_x-2_y2" type="ball">
+      <parent>mass_x-3_y2</parent>
+      <child>mass_x-2_y2</child>
+      <pose relative_to="mass_x-2_y2">-0.03333333333333333 0 0 0 0 0</pose>
+    </joint>
+    <joint name="W_x-3_y2_to_x-3_y3" type="ball">
+      <parent>mass_x-3_y2</parent>
+      <child>mass_x-3_y3</child>
+      <pose relative_to="mass_x-3_y3">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="NW_x-3_y2_to_x-2_y3" type="universal">
+      <parent>mass_x-3_y2</parent>
+      <child>mass_x-2_y3</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x-2_y3">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x-2_y2_to_x-1_y2" type="ball">
       <parent>mass_x-2_y2</parent>
       <child>mass_x-1_y2</child>
-      <pose relative_to="mass_x-1_y2">-0.05 0 0 0 0 0</pose>
+      <pose relative_to="mass_x-1_y2">-0.03333333333333333 0 0 0 0 0</pose>
+    </joint>
+    <joint name="W_x-2_y2_to_x-2_y3" type="ball">
+      <parent>mass_x-2_y2</parent>
+      <child>mass_x-2_y3</child>
+      <pose relative_to="mass_x-2_y3">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="SW_x-2_y2_to_x-3_y3" type="universal">
+      <parent>mass_x-2_y2</parent>
+      <child>mass_x-3_y3</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x-3_y3">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
+    </joint>
+    <joint name="NW_x-2_y2_to_x-1_y3" type="universal">
+      <parent>mass_x-2_y2</parent>
+      <child>mass_x-1_y3</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x-1_y3">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x-1_y2_to_x0_y2" type="ball">
       <parent>mass_x-1_y2</parent>
       <child>mass_x0_y2</child>
-      <pose relative_to="mass_x0_y2">-0.05 0 0 0 0 0</pose>
+      <pose relative_to="mass_x0_y2">-0.03333333333333333 0 0 0 0 0</pose>
+    </joint>
+    <joint name="W_x-1_y2_to_x-1_y3" type="ball">
+      <parent>mass_x-1_y2</parent>
+      <child>mass_x-1_y3</child>
+      <pose relative_to="mass_x-1_y3">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="SW_x-1_y2_to_x-2_y3" type="universal">
+      <parent>mass_x-1_y2</parent>
+      <child>mass_x-2_y3</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x-2_y3">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
+    </joint>
+    <joint name="NW_x-1_y2_to_x0_y3" type="universal">
+      <parent>mass_x-1_y2</parent>
+      <child>mass_x0_y3</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x0_y3">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x0_y2_to_x1_y2" type="ball">
       <parent>mass_x0_y2</parent>
       <child>mass_x1_y2</child>
-      <pose relative_to="mass_x1_y2">-0.05 0 0 0 0 0</pose>
+      <pose relative_to="mass_x1_y2">-0.03333333333333333 0 0 0 0 0</pose>
+    </joint>
+    <joint name="W_x0_y2_to_x0_y3" type="ball">
+      <parent>mass_x0_y2</parent>
+      <child>mass_x0_y3</child>
+      <pose relative_to="mass_x0_y3">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="SW_x0_y2_to_x-1_y3" type="universal">
+      <parent>mass_x0_y2</parent>
+      <child>mass_x-1_y3</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x-1_y3">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
+    </joint>
+    <joint name="NW_x0_y2_to_x1_y3" type="universal">
+      <parent>mass_x0_y2</parent>
+      <child>mass_x1_y3</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x1_y3">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
     </joint>
     <joint name="N_x1_y2_to_x2_y2" type="ball">
       <parent>mass_x1_y2</parent>
       <child>mass_x2_y2</child>
-      <pose relative_to="mass_x2_y2">-0.05 0 0 0 0 0</pose>
+      <pose relative_to="mass_x2_y2">-0.03333333333333333 0 0 0 0 0</pose>
+    </joint>
+    <joint name="W_x1_y2_to_x1_y3" type="ball">
+      <parent>mass_x1_y2</parent>
+      <child>mass_x1_y3</child>
+      <pose relative_to="mass_x1_y3">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="SW_x1_y2_to_x0_y3" type="universal">
+      <parent>mass_x1_y2</parent>
+      <child>mass_x0_y3</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x0_y3">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
+    </joint>
+    <joint name="NW_x1_y2_to_x2_y3" type="universal">
+      <parent>mass_x1_y2</parent>
+      <child>mass_x2_y3</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x2_y3">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
+    </joint>
+    <joint name="N_x2_y2_to_x3_y2" type="ball">
+      <parent>mass_x2_y2</parent>
+      <child>mass_x3_y2</child>
+      <pose relative_to="mass_x3_y2">-0.03333333333333333 0 0 0 0 0</pose>
+    </joint>
+    <joint name="W_x2_y2_to_x2_y3" type="ball">
+      <parent>mass_x2_y2</parent>
+      <child>mass_x2_y3</child>
+      <pose relative_to="mass_x2_y3">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="SW_x2_y2_to_x1_y3" type="universal">
+      <parent>mass_x2_y2</parent>
+      <child>mass_x1_y3</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x1_y3">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
+    </joint>
+    <joint name="NW_x2_y2_to_x3_y3" type="universal">
+      <parent>mass_x2_y2</parent>
+      <child>mass_x3_y3</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x3_y3">-0.03333333333333333 -0.03333333333333333 0 0 0 0.7853981633974483</pose>
+    </joint>
+    <joint name="W_x3_y2_to_x3_y3" type="ball">
+      <parent>mass_x3_y2</parent>
+      <child>mass_x3_y3</child>
+      <pose relative_to="mass_x3_y3">0 -0.03333333333333333 0 0 0 1.5707963267948966</pose>
+    </joint>
+    <joint name="SW_x3_y2_to_x2_y3" type="universal">
+      <parent>mass_x3_y2</parent>
+      <child>mass_x2_y3</child>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis>
+      <axis2>
+        <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>1e-05</damping>
+          <spring_stiffness>0.05</spring_stiffness>
+        </dynamics>
+      </axis2>
+      <pose relative_to="mass_x2_y3">0.03333333333333333 -0.03333333333333333 0 0 0 2.356194490192345</pose>
+    </joint>
+    <joint name="N_x-3_y3_to_x-2_y3" type="ball">
+      <parent>mass_x-3_y3</parent>
+      <child>mass_x-2_y3</child>
+      <pose relative_to="mass_x-2_y3">-0.03333333333333333 0 0 0 0 0</pose>
+    </joint>
+    <joint name="N_x-2_y3_to_x-1_y3" type="ball">
+      <parent>mass_x-2_y3</parent>
+      <child>mass_x-1_y3</child>
+      <pose relative_to="mass_x-1_y3">-0.03333333333333333 0 0 0 0 0</pose>
+    </joint>
+    <joint name="N_x-1_y3_to_x0_y3" type="ball">
+      <parent>mass_x-1_y3</parent>
+      <child>mass_x0_y3</child>
+      <pose relative_to="mass_x0_y3">-0.03333333333333333 0 0 0 0 0</pose>
+    </joint>
+    <joint name="N_x0_y3_to_x1_y3" type="ball">
+      <parent>mass_x0_y3</parent>
+      <child>mass_x1_y3</child>
+      <pose relative_to="mass_x1_y3">-0.03333333333333333 0 0 0 0 0</pose>
+    </joint>
+    <joint name="N_x1_y3_to_x2_y3" type="ball">
+      <parent>mass_x1_y3</parent>
+      <child>mass_x2_y3</child>
+      <pose relative_to="mass_x2_y3">-0.03333333333333333 0 0 0 0 0</pose>
+    </joint>
+    <joint name="N_x2_y3_to_x3_y3" type="ball">
+      <parent>mass_x2_y3</parent>
+      <child>mass_x3_y3</child>
+      <pose relative_to="mass_x3_y3">-0.03333333333333333 0 0 0 0 0</pose>
+    </joint>
+    <joint name="fixed_joint_mass_x0_y0_to_world" type="ball">
+      <parent>world</parent>
+      <child>mass_x0_y0</child>
     </joint>
   </model>
 </sdf>
