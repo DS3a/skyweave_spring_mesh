@@ -23,9 +23,9 @@
       </collision>
       <visual name="visual_x-2_y-2">
         <geometry>
-          <box>
-            <size>0.015 0.015 0.015</size>
-          </box>
+          <cylinder>
+            <size>0.015 0.015</size>
+          </cylinder>
         </geometry>
       </visual>
     </link>
@@ -51,9 +51,9 @@
       </collision>
       <visual name="visual_x-1_y-2">
         <geometry>
-          <box>
-            <size>0.015 0.015 0.015</size>
-          </box>
+          <cylinder>
+            <size>0.015 0.015</size>
+          </cylinder>
         </geometry>
       </visual>
     </link>
@@ -79,9 +79,9 @@
       </collision>
       <visual name="visual_x0_y-2">
         <geometry>
-          <box>
-            <size>0.015 0.015 0.015</size>
-          </box>
+          <cylinder>
+            <size>0.015 0.015</size>
+          </cylinder>
         </geometry>
       </visual>
     </link>
@@ -107,9 +107,9 @@
       </collision>
       <visual name="visual_x1_y-2">
         <geometry>
-          <box>
-            <size>0.015 0.015 0.015</size>
-          </box>
+          <cylinder>
+            <size>0.015 0.015</size>
+          </cylinder>
         </geometry>
       </visual>
     </link>
@@ -135,9 +135,9 @@
       </collision>
       <visual name="visual_x2_y-2">
         <geometry>
-          <box>
-            <size>0.015 0.015 0.015</size>
-          </box>
+          <cylinder>
+            <size>0.015 0.015</size>
+          </cylinder>
         </geometry>
       </visual>
     </link>
@@ -163,9 +163,9 @@
       </collision>
       <visual name="visual_x-2_y-1">
         <geometry>
-          <box>
-            <size>0.015 0.015 0.015</size>
-          </box>
+          <cylinder>
+            <size>0.015 0.015</size>
+          </cylinder>
         </geometry>
       </visual>
     </link>
@@ -191,9 +191,9 @@
       </collision>
       <visual name="visual_x-1_y-1">
         <geometry>
-          <box>
-            <size>0.015 0.015 0.015</size>
-          </box>
+          <cylinder>
+            <size>0.015 0.015</size>
+          </cylinder>
         </geometry>
       </visual>
     </link>
@@ -219,9 +219,9 @@
       </collision>
       <visual name="visual_x0_y-1">
         <geometry>
-          <box>
-            <size>0.015 0.015 0.015</size>
-          </box>
+          <cylinder>
+            <size>0.015 0.015</size>
+          </cylinder>
         </geometry>
       </visual>
     </link>
@@ -247,9 +247,9 @@
       </collision>
       <visual name="visual_x1_y-1">
         <geometry>
-          <box>
-            <size>0.015 0.015 0.015</size>
-          </box>
+          <cylinder>
+            <size>0.015 0.015</size>
+          </cylinder>
         </geometry>
       </visual>
     </link>
@@ -275,9 +275,9 @@
       </collision>
       <visual name="visual_x2_y-1">
         <geometry>
-          <box>
-            <size>0.015 0.015 0.015</size>
-          </box>
+          <cylinder>
+            <size>0.015 0.015</size>
+          </cylinder>
         </geometry>
       </visual>
     </link>
@@ -303,9 +303,9 @@
       </collision>
       <visual name="visual_x-2_y0">
         <geometry>
-          <box>
-            <size>0.015 0.015 0.015</size>
-          </box>
+          <cylinder>
+            <size>0.015 0.015</size>
+          </cylinder>
         </geometry>
       </visual>
     </link>
@@ -331,9 +331,9 @@
       </collision>
       <visual name="visual_x-1_y0">
         <geometry>
-          <box>
-            <size>0.015 0.015 0.015</size>
-          </box>
+          <cylinder>
+            <size>0.015 0.015</size>
+          </cylinder>
         </geometry>
       </visual>
     </link>
@@ -359,9 +359,9 @@
       </collision>
       <visual name="visual_x0_y0">
         <geometry>
-          <box>
-            <size>0.015 0.015 0.015</size>
-          </box>
+          <cylinder>
+            <size>0.015 0.015</size>
+          </cylinder>
         </geometry>
       </visual>
     </link>
@@ -387,9 +387,9 @@
       </collision>
       <visual name="visual_x1_y0">
         <geometry>
-          <box>
-            <size>0.015 0.015 0.015</size>
-          </box>
+          <cylinder>
+            <size>0.015 0.015</size>
+          </cylinder>
         </geometry>
       </visual>
     </link>
@@ -415,9 +415,9 @@
       </collision>
       <visual name="visual_x2_y0">
         <geometry>
-          <box>
-            <size>0.015 0.015 0.015</size>
-          </box>
+          <cylinder>
+            <size>0.015 0.015</size>
+          </cylinder>
         </geometry>
       </visual>
     </link>
@@ -443,9 +443,9 @@
       </collision>
       <visual name="visual_x-2_y1">
         <geometry>
-          <box>
-            <size>0.015 0.015 0.015</size>
-          </box>
+          <cylinder>
+            <size>0.015 0.015</size>
+          </cylinder>
         </geometry>
       </visual>
     </link>
@@ -471,9 +471,9 @@
       </collision>
       <visual name="visual_x-1_y1">
         <geometry>
-          <box>
-            <size>0.015 0.015 0.015</size>
-          </box>
+          <cylinder>
+            <size>0.015 0.015</size>
+          </cylinder>
         </geometry>
       </visual>
     </link>
@@ -499,9 +499,9 @@
       </collision>
       <visual name="visual_x0_y1">
         <geometry>
-          <box>
-            <size>0.015 0.015 0.015</size>
-          </box>
+          <cylinder>
+            <size>0.015 0.015</size>
+          </cylinder>
         </geometry>
       </visual>
     </link>
@@ -527,9 +527,9 @@
       </collision>
       <visual name="visual_x1_y1">
         <geometry>
-          <box>
-            <size>0.015 0.015 0.015</size>
-          </box>
+          <cylinder>
+            <size>0.015 0.015</size>
+          </cylinder>
         </geometry>
       </visual>
     </link>
@@ -555,9 +555,9 @@
       </collision>
       <visual name="visual_x2_y1">
         <geometry>
-          <box>
-            <size>0.015 0.015 0.015</size>
-          </box>
+          <cylinder>
+            <size>0.015 0.015</size>
+          </cylinder>
         </geometry>
       </visual>
     </link>
@@ -583,9 +583,9 @@
       </collision>
       <visual name="visual_x-2_y2">
         <geometry>
-          <box>
-            <size>0.015 0.015 0.015</size>
-          </box>
+          <cylinder>
+            <size>0.015 0.015</size>
+          </cylinder>
         </geometry>
       </visual>
     </link>
@@ -611,9 +611,9 @@
       </collision>
       <visual name="visual_x-1_y2">
         <geometry>
-          <box>
-            <size>0.015 0.015 0.015</size>
-          </box>
+          <cylinder>
+            <size>0.015 0.015</size>
+          </cylinder>
         </geometry>
       </visual>
     </link>
@@ -639,9 +639,9 @@
       </collision>
       <visual name="visual_x0_y2">
         <geometry>
-          <box>
-            <size>0.015 0.015 0.015</size>
-          </box>
+          <cylinder>
+            <size>0.015 0.015</size>
+          </cylinder>
         </geometry>
       </visual>
     </link>
@@ -667,9 +667,9 @@
       </collision>
       <visual name="visual_x1_y2">
         <geometry>
-          <box>
-            <size>0.015 0.015 0.015</size>
-          </box>
+          <cylinder>
+            <size>0.015 0.015</size>
+          </cylinder>
         </geometry>
       </visual>
     </link>
@@ -695,9 +695,9 @@
       </collision>
       <visual name="visual_x2_y2">
         <geometry>
-          <box>
-            <size>0.015 0.015 0.015</size>
-          </box>
+          <cylinder>
+            <size>0.015 0.015</size>
+          </cylinder>
         </geometry>
       </visual>
     </link>
