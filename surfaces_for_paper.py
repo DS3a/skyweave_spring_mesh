@@ -46,13 +46,6 @@ class SurfaceController:
         self.fig = None
         self.ax = None
         self.surface = None
-        self.slider_fig = None
-
-        # Keep references so widgets/callbacks stay alive.
-        self.amp_slider = None
-        self.angle_slider = None
-        self.phase_slider = None
-        self._plot_scroll_cid = None
 
     def _draw_surface(self):
         x_vals, y_vals, z_vals = gamma_sur(U, V, A=self.amp, angle=self.angle, phase=self.phase)
@@ -73,23 +66,6 @@ class SurfaceController:
         self.phase = val
         self._draw_surface()
 
-    def _on_scroll_zoom(self, event):
-        if event.inaxes != self.ax:
-            return
-
-        scale = 0.90 if event.button == "up" else 1.10
-        for get_lim, set_lim in (
-            (self.ax.get_xlim3d, self.ax.set_xlim3d),
-            (self.ax.get_ylim3d, self.ax.set_ylim3d),
-            (self.ax.get_zlim3d, self.ax.set_zlim3d),
-        ):
-            lo, hi = get_lim()
-            center = (lo + hi) / 2.0
-            half = (hi - lo) * scale / 2.0
-            set_lim(center - half, center + half)
-
-        self.fig.canvas.draw_idle()
-
     def setup_plot_window(self):
         self.fig = plt.figure("Developable surface", figsize=(12, 7))
         self.ax = self.fig.add_subplot(111, projection="3d")
@@ -98,29 +74,26 @@ class SurfaceController:
         self.ax.set_xlabel("x")
         self.ax.set_ylabel("y")
         self.ax.set_zlabel("z")
-
         self._draw_surface()
 
-        # Explicitly enable built-in navigation and add wheel zoom.
-        self.ax.set_navigate(True)
-        self._plot_scroll_cid = self.fig.canvas.mpl_connect("scroll_event", self._on_scroll_zoom)
-
     def setup_slider_window(self):
-        self.slider_fig = plt.figure("Surface sliders", figsize=(7, 3.5))
+        slider_fig = plt.figure("Surface sliders", figsize=(7, 3.5))
 
-        amp_ax = self.slider_fig.add_axes([0.15, 0.70, 0.75, 0.08])
-        angle_ax = self.slider_fig.add_axes([0.15, 0.45, 0.75, 0.08])
-        phase_ax = self.slider_fig.add_axes([0.15, 0.20, 0.75, 0.08])
+        amp_ax = slider_fig.add_axes([0.15, 0.70, 0.75, 0.08])
+        angle_ax = slider_fig.add_axes([0.15, 0.45, 0.75, 0.08])
+        phase_ax = slider_fig.add_axes([0.15, 0.20, 0.75, 0.08])
 
-        self.amp_slider = Slider(amp_ax, "Amplitude", 0.0, 0.1, valinit=self.amp, valstep=0.005)
-        self.angle_slider = Slider(angle_ax, "Angle", 0.0, 2 * np.pi, valinit=self.angle, valstep=0.05)
-        self.phase_slider = Slider(phase_ax, "Phase", 0.0, 2 * np.pi, valinit=self.phase, valstep=0.05)
+        amp_slider = Slider(amp_ax, "Amplitude", 0.0, 0.1, valinit=self.amp, valstep=0.005)
+        angle_slider = Slider(angle_ax, "Angle", 0.0, 2 * np.pi, valinit=self.angle, valstep=0.05)
+        phase_slider = Slider(phase_ax, "Phase", 0.0, 2 * np.pi, valinit=self.phase, valstep=0.05)
 
-        self.amp_slider.on_changed(self._update_amp)
-        self.angle_slider.on_changed(self._update_angle)
-        self.phase_slider.on_changed(self._update_phase)
+        amp_slider.on_changed(self._update_amp)
+        angle_slider.on_changed(self._update_angle)
+        phase_slider.on_changed(self._update_phase)
 
-    def arrange_windows(self):
+    @staticmethod
+    def _arrange_windows():
+        mgr = plt.get_current_fig_manager()
         root = tk.Tk()
         root.withdraw()
         screen_w = root.winfo_screenwidth()
@@ -128,31 +101,26 @@ class SurfaceController:
         root.destroy()
 
         # Best-effort geometry placement for TkAgg; ignored by other backends.
-        plot_mgr = self.fig.canvas.manager if self.fig is not None else None
-        slider_mgr = self.slider_fig.canvas.manager if self.slider_fig is not None else None
-
         try:
-            if plot_mgr and hasattr(plot_mgr, "window") and hasattr(plot_mgr.window, "wm_geometry"):
-                plot_mgr.window.wm_geometry("1200x800+20+20")
+            if hasattr(mgr, "window") and hasattr(mgr.window, "wm_geometry"):
+                mgr.window.wm_geometry(f"1200x800+20+20")
         except Exception:
             pass
 
-        try:
-            if slider_mgr and hasattr(slider_mgr, "window") and hasattr(slider_mgr.window, "wm_geometry"):
-                x_pos = min(screen_w - 760, 1250)
-                y_pos = min(screen_h - 420, 50)
-                slider_mgr.window.wm_geometry(f"740x360+{x_pos}+{y_pos}")
-        except Exception:
-            pass
+        # Try to place the second figure to the right.
+        if len(plt.get_fignums()) >= 2:
+            second_mgr = plt.figure(plt.get_fignums()[1]).canvas.manager
+            try:
+                if hasattr(second_mgr, "window") and hasattr(second_mgr.window, "wm_geometry"):
+                    x_pos = min(screen_w - 760, 1250)
+                    y_pos = min(screen_h - 420, 50)
+                    second_mgr.window.wm_geometry(f"740x360+{x_pos}+{y_pos}")
+            except Exception:
+                pass
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(
-        description=(
-            "Render a developable surface with external slider controls. "
-            "Use mouse drag to rotate and mouse wheel to zoom in the surface window."
-        )
-    )
+    parser = argparse.ArgumentParser(description="Render a developable surface with external slider controls.")
     parser.add_argument("--amplitude", type=float, default=0.05, help="Initial amplitude value.")
     parser.add_argument("--angle", type=float, default=float(np.pi), help="Initial angle in radians.")
     parser.add_argument("--phase", type=float, default=float(np.pi / 2), help="Initial phase in radians.")
@@ -165,7 +133,7 @@ def main():
     controller = SurfaceController(start_amp=args.amplitude, start_angle=args.angle, start_phase=args.phase)
     controller.setup_plot_window()
     controller.setup_slider_window()
-    controller.arrange_windows()
+    controller._arrange_windows()
 
     plt.show()
 
