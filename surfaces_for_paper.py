@@ -1,9 +1,10 @@
 import argparse
-import tkinter as tk
+import json
+from pathlib import Path
 
-import matplotlib.pyplot as plt
 import numpy as np
-from matplotlib.widgets import Slider
+import plotly.graph_objects as go
+import plotly.io as pio
 
 side_length = 0.4
 u_min, u_max = -side_length / 2, side_length / 2
@@ -18,6 +19,8 @@ v = np.linspace(v_min, v_max, num_v)
 U, V = np.meshgrid(u, v)
 
 frequency = np.pi / 0.4
+MAX_AMPLITUDE_FOR_Z_SCALE = 0.1
+Z_AXIS_MARGIN = 0.01
 
 
 def gamma_sur(u_vals, v_vals, A=0.05, angle=np.pi, phase=np.pi / 2, base_pos=np.array([0, 0, 0])):
@@ -25,7 +28,6 @@ def gamma_sur(u_vals, v_vals, A=0.05, angle=np.pi, phase=np.pi / 2, base_pos=np.
     y_vals = v_vals
 
     s_vals = u_vals * np.cos(angle) + v_vals * np.sin(angle)
-
     z_vals = A * np.cos(frequency * s_vals + phase)
 
     offset = base_pos - np.array([0, 0, A * np.cos(phase)])
@@ -37,138 +39,239 @@ def gamma_sur(u_vals, v_vals, A=0.05, angle=np.pi, phase=np.pi / 2, base_pos=np.
     return x_vals, y_vals, z_vals
 
 
-class SurfaceController:
-    def __init__(self, start_amp=0.05, start_angle=np.pi, start_phase=np.pi / 2):
-        self.amp = start_amp
-        self.angle = start_angle
-        self.phase = start_phase
+def format_status_text(amp, angle, phase):
+    return (
+        f"Amplitude: {amp:.4f} | Angle: {angle:.4f} rad | "
+        f"Phase: {phase:.4f} rad | Frequency: {frequency:.4f} rad/m"
+    )
 
-        self.fig = None
-        self.ax = None
-        self.surface = None
-        self.slider_fig = None
 
-        # Keep references so widgets/callbacks stay alive.
-        self.amp_slider = None
-        self.angle_slider = None
-        self.phase_slider = None
-        self._plot_scroll_cid = None
+def build_post_script(u_grid, v_grid):
+    u_json = json.dumps(u_grid.tolist())
+    v_json = json.dumps(v_grid.tolist())
 
-    def _draw_surface(self):
-        x_vals, y_vals, z_vals = gamma_sur(U, V, A=self.amp, angle=self.angle, phase=self.phase)
-        if self.surface is not None:
-            self.surface.remove()
-        self.surface = self.ax.plot_surface(x_vals, y_vals, z_vals, cmap="viridis", edgecolor="none")
-        self.fig.canvas.draw_idle()
+    return f"""
+const plotDiv = document.getElementById('{{plot_id}}');
+const frequency = {frequency};
+const uGrid = {u_json};
+const vGrid = {v_json};
 
-    def _update_amp(self, val):
-        self.amp = val
-        self._draw_surface()
+function computeSurface(ampVal, angleVal, phaseVal) {{
+    const z = [];
+    const phaseCos = Math.cos(phaseVal);
 
-    def _update_angle(self, val):
-        self.angle = val
-        self._draw_surface()
+    for (let i = 0; i < uGrid.length; i += 1) {{
+        const row = [];
+        for (let j = 0; j < uGrid[i].length; j += 1) {{
+            const s = uGrid[i][j] * Math.cos(angleVal) + vGrid[i][j] * Math.sin(angleVal);
+            row.push(ampVal * Math.cos(frequency * s + phaseVal) - ampVal * phaseCos);
+        }}
+        z.push(row);
+    }}
 
-    def _update_phase(self, val):
-        self.phase = val
-        self._draw_surface()
+    return z;
+}}
 
-    def _on_scroll_zoom(self, event):
-        if event.inaxes != self.ax:
-            return
+function updatePlot(ampVal, angleVal, phaseVal) {{
+    const z = computeSurface(ampVal, angleVal, phaseVal);
+    const statusText = `Amplitude: ${{ampVal.toFixed(4)}} | Angle: ${{angleVal.toFixed(4)}} rad | Phase: ${{phaseVal.toFixed(4)}} rad | Frequency: ${{frequency.toFixed(4)}} rad/m`;
+    Plotly.restyle(plotDiv, {{ z: [z], meta: [{{ amp: ampVal, angle: angleVal, phase: phaseVal }}] }}, [0]);
+    Plotly.relayout(plotDiv, {{ 'annotations[0].text': statusText }});
+}}
 
-        scale = 0.90 if event.button == "up" else 1.10
-        for get_lim, set_lim in (
-            (self.ax.get_xlim3d, self.ax.set_xlim3d),
-            (self.ax.get_ylim3d, self.ax.set_ylim3d),
-            (self.ax.get_zlim3d, self.ax.set_zlim3d),
-        ):
-            lo, hi = get_lim()
-            center = (lo + hi) / 2.0
-            half = (hi - lo) * scale / 2.0
-            set_lim(center - half, center + half)
+function buildControlsInWindow(win) {{
+    const doc = win.document;
+    doc.open();
+    doc.write(`<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+  <meta charset=\"utf-8\" />
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
+  <title>Surface controls</title>
+  <style>
+    body {{ font-family: sans-serif; margin: 0; padding: 12px; }}
+    .row {{ display: grid; grid-template-columns: 130px 1fr 110px; gap: 8px; align-items: center; margin-bottom: 10px; }}
+    .panel {{ border: 1px solid #ddd; border-radius: 8px; padding: 10px; }}
+    .title {{ font-weight: 600; margin-bottom: 10px; }}
+    .meta {{ margin-top: 8px; font-size: 14px; }}
+  </style>
+</head>
+<body>
+  <div class=\"panel\">
+    <div class=\"title\">Surface controls</div>
+    <div class=\"row\"><label for=\"amp\">Amplitude</label><input id=\"amp\" type=\"range\" min=\"-0.05\" max=\"0.05\" step=\"0.005\"><div id=\"ampVal\"></div></div>
+    <div class=\"row\"><label for=\"angle\">Angle (rad)</label><input id=\"angle\" type=\"range\" min=\"0\" max=\"${{2 * Math.PI}}\" step=\"0.05\"><div id=\"angleVal\"></div></div>
+    <div class=\"row\"><label for=\"phase\">Phase (rad)</label><input id=\"phase\" type=\"range\" min=\"${{-Math.PI}}\" max=\"${{Math.PI}}\" step=\"0.05\"><div id=\"phaseVal\"></div></div>
+    <div class=\"meta\" id=\"freq\"></div>
+  </div>
+</body>
+</html>`);
+    doc.close();
 
-        self.fig.canvas.draw_idle()
+    const ampInput = doc.getElementById('amp');
+    const angleInput = doc.getElementById('angle');
+    const phaseInput = doc.getElementById('phase');
+    const ampVal = doc.getElementById('ampVal');
+    const angleVal = doc.getElementById('angleVal');
+    const phaseVal = doc.getElementById('phaseVal');
+    const freq = doc.getElementById('freq');
 
-    def setup_plot_window(self):
-        scale = 2
-        self.fig = plt.figure("Developable surface", figsize=(20, 16))
-        self.ax = self.fig.add_subplot(111, projection="3d")
-        self.ax.set_title("Developable surface")
-        self.ax.set_box_aspect((2*scale, 2*scale, 0.5*scale))
-        
-        self.ax.set_ylabel("y")
-        self.ax.set_zlabel("z")
+    ampInput.value = String(plotDiv.data[0].meta.amp);
+    angleInput.value = String(plotDiv.data[0].meta.angle);
+    phaseInput.value = String(plotDiv.data[0].meta.phase);
+    freq.textContent = `Frequency (constant): ${{frequency.toFixed(4)}} rad/m`;
 
-        self._draw_surface()
+    const sync = () => {{
+        const amp = Number(ampInput.value);
+        const angle = Number(angleInput.value);
+        const phase = Number(phaseInput.value);
+        ampVal.textContent = amp.toFixed(4);
+        angleVal.textContent = angle.toFixed(4);
+        phaseVal.textContent = phase.toFixed(4);
+        updatePlot(amp, angle, phase);
+    }};
 
-        # Explicitly enable built-in navigation and add wheel zoom.
-        self.ax.set_navigate(True)
-        self._plot_scroll_cid = self.fig.canvas.mpl_connect("scroll_event", self._on_scroll_zoom)
+    ampInput.addEventListener('input', sync);
+    angleInput.addEventListener('input', sync);
+    phaseInput.addEventListener('input', sync);
+    sync();
+}}
 
-    def setup_slider_window(self):
-        self.slider_fig = plt.figure("Surface sliders", figsize=(7, 3.5))
+const openControlsBtn = document.createElement('button');
+openControlsBtn.textContent = 'Open controls window';
+openControlsBtn.style.position = 'fixed';
+openControlsBtn.style.top = '10px';
+openControlsBtn.style.right = '10px';
+openControlsBtn.style.zIndex = '10';
+openControlsBtn.style.padding = '8px 10px';
+openControlsBtn.style.border = '1px solid #ccc';
+openControlsBtn.style.background = '#fff';
+openControlsBtn.style.borderRadius = '6px';
+openControlsBtn.style.cursor = 'pointer';
+document.body.appendChild(openControlsBtn);
 
-        amp_ax = self.slider_fig.add_axes([0.15, 0.70, 0.75, 0.08])
-        angle_ax = self.slider_fig.add_axes([0.15, 0.45, 0.75, 0.08])
-        phase_ax = self.slider_fig.add_axes([0.15, 0.20, 0.75, 0.08])
+let controlsWindow = null;
+function openControlsWindow() {{
+    if (controlsWindow && !controlsWindow.closed) {{
+        controlsWindow.focus();
+        return;
+    }}
+    controlsWindow = window.open('', 'surface_controls', 'width=560,height=320,left=40,top=40');
+    if (!controlsWindow) {{
+        alert('Popup blocked. Please allow popups and click "Open controls window" again.');
+        return;
+    }}
+    buildControlsInWindow(controlsWindow);
+}}
 
-        self.amp_slider = Slider(amp_ax, "Amplitude", 0.0, 0.1, valinit=self.amp, valstep=0.005)
-        self.angle_slider = Slider(angle_ax, "Angle", 0.0, 2 * np.pi, valinit=self.angle, valstep=0.05)
-        self.phase_slider = Slider(phase_ax, "Phase", -np.pi, np.pi, valinit=self.phase, valstep=0.05)
-
-        self.amp_slider.on_changed(self._update_amp)
-        self.angle_slider.on_changed(self._update_angle)
-        self.phase_slider.on_changed(self._update_phase)
-
-    def arrange_windows(self):
-        root = tk.Tk()
-        root.withdraw()
-        screen_w = root.winfo_screenwidth()
-        screen_h = root.winfo_screenheight()
-        root.destroy()
-
-        # Best-effort geometry placement for TkAgg; ignored by other backends.
-        plot_mgr = self.fig.canvas.manager if self.fig is not None else None
-        slider_mgr = self.slider_fig.canvas.manager if self.slider_fig is not None else None
-
-        try:
-            if plot_mgr and hasattr(plot_mgr, "window") and hasattr(plot_mgr.window, "wm_geometry"):
-                plot_mgr.window.wm_geometry("1920x1080+80+80")
-        except Exception:
-            pass
-
-        try:
-            if slider_mgr and hasattr(slider_mgr, "window") and hasattr(slider_mgr.window, "wm_geometry"):
-                x_pos = min(screen_w - 760, 1250)
-                y_pos = min(screen_h - 420, 50)
-                slider_mgr.window.wm_geometry(f"740x360+{x_pos}+{y_pos}")
-        except Exception:
-            pass
+openControlsBtn.addEventListener('click', openControlsWindow);
+setTimeout(openControlsWindow, 150);
+"""
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(
-        description=(
-            "Render a developable surface with external slider controls. "
-            "Use mouse drag to rotate and mouse wheel to zoom in the surface window."
-        )
-    )
+    parser = argparse.ArgumentParser(description="Render interactive developable surface in Plotly.")
     parser.add_argument("--amplitude", type=float, default=0.05, help="Initial amplitude value.")
     parser.add_argument("--angle", type=float, default=float(np.pi), help="Initial angle in radians.")
     parser.add_argument("--phase", type=float, default=float(np.pi / 2), help="Initial phase in radians.")
+    parser.add_argument(
+        "--output",
+        type=str,
+        default="surface_controls_plotly.html",
+        help="Output HTML file path.",
+    )
     return parser.parse_args()
 
 
 def main():
     args = parse_args()
 
-    controller = SurfaceController(start_amp=args.amplitude, start_angle=args.angle, start_phase=args.phase)
-    controller.setup_plot_window()
-    controller.setup_slider_window()
-    controller.arrange_windows()
+    x_vals, y_vals, z_vals = gamma_sur(U, V, A=args.amplitude, angle=args.angle, phase=args.phase)
+    status_text = format_status_text(args.amplitude, args.angle, args.phase)
 
-    plt.show()
+    fig = go.Figure(
+        data=[
+            go.Surface(
+                x=x_vals,
+                y=y_vals,
+                z=z_vals,
+                colorscale="Viridis",
+                showscale=False,
+                meta={"amp": args.amplitude, "angle": args.angle, "phase": args.phase},
+            )
+        ]
+    )
+
+    fig.update_layout(
+        title="Developable surface",
+        margin=dict(l=20, r=20, b=20, t=70),
+        scene=dict(
+            xaxis_title="x",
+            yaxis_title="y",
+            zaxis_title="z",
+            zaxis=dict(
+                range=[
+                    -(MAX_AMPLITUDE_FOR_Z_SCALE + Z_AXIS_MARGIN),
+                    MAX_AMPLITUDE_FOR_Z_SCALE + Z_AXIS_MARGIN,
+                ],
+                autorange=False,
+            ),
+            aspectmode="manual",
+            aspectratio=dict(x=2, y=2, z=0.5),
+            domain=dict(x=[0.0, 1.0], y=[0.0, 1.0]),
+        ),
+        annotations=[
+            dict(
+                text=status_text,
+                x=0.5,
+                y=1.04,
+                xref="paper",
+                yref="paper",
+                showarrow=False,
+                font=dict(size=14),
+            )
+        ],
+    )
+
+    plot_div = pio.to_html(
+        fig,
+        include_plotlyjs="cdn",
+        full_html=False,
+        post_script=build_post_script(U, V),
+        default_width="100vw",
+        default_height="100vh",
+    )
+
+    full_screen_html = f"""<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+  <meta charset=\"utf-8\" />
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
+  <title>Developable surface</title>
+  <style>
+    html, body {{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      background: #ffffff;
+      overflow: hidden;
+    }}
+    .plot-wrap {{
+      width: 100vw;
+      height: 100vh;
+    }}
+  </style>
+</head>
+<body>
+  <div class=\"plot-wrap\">{plot_div}</div>
+</body>
+</html>
+"""
+
+    output_path = Path(args.output)
+    output_path.write_text(full_screen_html, encoding="utf-8")
+
+    print(f"Wrote interactive plot to: {output_path.resolve()}")
 
 
 if __name__ == "__main__":
