@@ -146,6 +146,93 @@ function updatePlot() {{
     Plotly.relayout(plotDiv, {{ 'annotations[0].text': statusText }});
 }}
 
+function buildControlsInWindow(win) {{
+    const doc = win.document;
+    doc.open();
+    doc.write(`<!DOCTYPE html>
+<html lang=\"en\">
+<head>
+  <meta charset=\"utf-8\" />
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
+  <title>Surface controls</title>
+  <style>
+    body {{ font-family: sans-serif; margin: 0; padding: 12px; }}
+    .row {{ display: grid; grid-template-columns: 130px 1fr 110px; gap: 8px; align-items: center; margin-bottom: 10px; }}
+    .panel {{ border: 1px solid #ddd; border-radius: 8px; padding: 10px; }}
+    .title {{ font-weight: 600; margin-bottom: 10px; }}
+    .meta {{ margin-top: 8px; font-size: 14px; }}
+  </style>
+</head>
+<body>
+  <div class=\"panel\">
+    <div class=\"title\">Surface controls</div>
+    <div class=\"row\"><label for=\"amp\">Amplitude</label><input id=\"amp\" type=\"range\" min=\"-0.05\" max=\"0.05\" step=\"0.005\"><div id=\"ampVal\"></div></div>
+    <div class=\"row\"><label for=\"angle\">Angle (rad)</label><input id=\"angle\" type=\"range\" min=\"0\" max=\"${{2 * Math.PI}}\" step=\"0.05\"><div id=\"angleVal\"></div></div>
+    <div class=\"row\"><label for=\"phase\">Phase (rad)</label><input id=\"phase\" type=\"range\" min=\"${{-Math.PI}}\" max=\"${{Math.PI}}\" step=\"0.05\"><div id=\"phaseVal\"></div></div>
+    <div class=\"meta\" id=\"freq\"></div>
+  </div>
+</body>
+</html>`);
+    doc.close();
+
+    const ampInput = doc.getElementById('amp');
+    const angleInput = doc.getElementById('angle');
+    const phaseInput = doc.getElementById('phase');
+    const ampVal = doc.getElementById('ampVal');
+    const angleVal = doc.getElementById('angleVal');
+    const phaseVal = doc.getElementById('phaseVal');
+    const freq = doc.getElementById('freq');
+
+    ampInput.value = String(plotDiv.data[0].meta.amp);
+    angleInput.value = String(plotDiv.data[0].meta.angle);
+    phaseInput.value = String(plotDiv.data[0].meta.phase);
+    freq.textContent = `Frequency (constant): ${{frequency.toFixed(4)}} rad/m`;
+
+    const sync = () => {{
+        const amp = Number(ampInput.value);
+        const angle = Number(angleInput.value);
+        const phase = Number(phaseInput.value);
+        ampVal.textContent = amp.toFixed(4);
+        angleVal.textContent = angle.toFixed(4);
+        phaseVal.textContent = phase.toFixed(4);
+        updatePlot(amp, angle, phase);
+    }};
+
+    ampInput.addEventListener('input', sync);
+    angleInput.addEventListener('input', sync);
+    phaseInput.addEventListener('input', sync);
+    sync();
+}}
+
+const openControlsBtn = document.createElement('button');
+openControlsBtn.textContent = 'Open controls window';
+openControlsBtn.style.position = 'fixed';
+openControlsBtn.style.top = '10px';
+openControlsBtn.style.right = '10px';
+openControlsBtn.style.zIndex = '10';
+openControlsBtn.style.padding = '8px 10px';
+openControlsBtn.style.border = '1px solid #ccc';
+openControlsBtn.style.background = '#fff';
+openControlsBtn.style.borderRadius = '6px';
+openControlsBtn.style.cursor = 'pointer';
+document.body.appendChild(openControlsBtn);
+
+let controlsWindow = null;
+function openControlsWindow() {{
+    if (controlsWindow && !controlsWindow.closed) {{
+        controlsWindow.focus();
+        return;
+    }}
+    controlsWindow = window.open('', 'surface_controls', 'width=560,height=320,left=40,top=40');
+    if (!controlsWindow) {{
+        alert('Popup blocked. Please allow popups and click "Open controls window" again.');
+        return;
+    }}
+    buildControlsInWindow(controlsWindow);
+}}
+
+openControlsBtn.addEventListener('click', openControlsWindow);
+setTimeout(openControlsWindow, 150);
 amp.input.addEventListener('input', updatePlot);
 angle.input.addEventListener('input', updatePlot);
 phase.input.addEventListener('input', updatePlot);
@@ -260,7 +347,7 @@ def main():
 """
 
     output_path = Path(args.output)
-    output_path.write_text(centered_html, encoding="utf-8")
+    output_path.write_text(full_screen_html, encoding="utf-8")
 
     print(f"Wrote interactive plot to: {output_path.resolve()}")
 
