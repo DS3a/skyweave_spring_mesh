@@ -19,6 +19,8 @@ v = np.linspace(v_min, v_max, num_v)
 U, V = np.meshgrid(u, v)
 
 frequency = np.pi / 0.4
+DEFAULT_PLOT_WIDTH = 1800
+DEFAULT_PLOT_HEIGHT = 1200
 MAX_AMPLITUDE_FOR_Z_SCALE = 0.1
 Z_AXIS_MARGIN = 0.01
 
@@ -56,6 +58,62 @@ const frequency = {frequency};
 const uGrid = {u_json};
 const vGrid = {v_json};
 
+const controls = document.createElement('div');
+controls.style.maxWidth = '1000px';
+controls.style.width = '100%';
+controls.style.margin = '8px auto 0 auto';
+controls.style.fontFamily = 'sans-serif';
+controls.style.padding = '6px 12px';
+controls.style.border = '1px solid #ddd';
+controls.style.borderRadius = '8px';
+
+const title = document.createElement('div');
+title.textContent = 'Surface controls';
+title.style.fontWeight = '600';
+title.style.marginBottom = '8px';
+controls.appendChild(title);
+
+function addSliderRow(label, min, max, step, value) {{
+    const row = document.createElement('div');
+    row.style.display = 'grid';
+    row.style.gridTemplateColumns = '120px 1fr 120px';
+    row.style.alignItems = 'center';
+    row.style.gap = '8px';
+    row.style.marginBottom = '8px';
+
+    const name = document.createElement('label');
+    name.textContent = label;
+
+    const input = document.createElement('input');
+    input.type = 'range';
+    input.min = min;
+    input.max = max;
+    input.step = step;
+    input.value = value;
+    input.style.width = '100%';
+
+    const valueText = document.createElement('div');
+    valueText.style.textAlign = 'right';
+
+    row.appendChild(name);
+    row.appendChild(input);
+    row.appendChild(valueText);
+    controls.appendChild(row);
+    return {{ input, valueText }};
+}}
+
+const amp = addSliderRow('Amplitude', 0.0, 0.1, 0.005, plotDiv.data[0].meta.amp);
+const angle = addSliderRow('Angle (rad)', 0.0, 2 * Math.PI, 0.05, plotDiv.data[0].meta.angle);
+const phase = addSliderRow('Phase (rad)', -Math.PI, Math.PI, 0.05, plotDiv.data[0].meta.phase);
+
+const freqLine = document.createElement('div');
+freqLine.textContent = `Frequency (constant): ${{frequency.toFixed(4)}} rad/m`;
+freqLine.style.marginTop = '4px';
+freqLine.style.fontSize = '14px';
+controls.appendChild(freqLine);
+
+plotDiv.parentNode.insertBefore(controls, plotDiv);
+
 function computeSurface(ampVal, angleVal, phaseVal) {{
     const z = [];
     const phaseCos = Math.cos(phaseVal);
@@ -72,9 +130,18 @@ function computeSurface(ampVal, angleVal, phaseVal) {{
     return z;
 }}
 
-function updatePlot(ampVal, angleVal, phaseVal) {{
+function updatePlot() {{
+    const ampVal = Number(amp.input.value);
+    const angleVal = Number(angle.input.value);
+    const phaseVal = Number(phase.input.value);
+
+    amp.valueText.textContent = ampVal.toFixed(4);
+    angle.valueText.textContent = angleVal.toFixed(4);
+    phase.valueText.textContent = phaseVal.toFixed(4);
+
     const z = computeSurface(ampVal, angleVal, phaseVal);
     const statusText = `Amplitude: ${{ampVal.toFixed(4)}} | Angle: ${{angleVal.toFixed(4)}} rad | Phase: ${{phaseVal.toFixed(4)}} rad | Frequency: ${{frequency.toFixed(4)}} rad/m`;
+
     Plotly.restyle(plotDiv, {{ z: [z], meta: [{{ amp: ampVal, angle: angleVal, phase: phaseVal }}] }}, [0]);
     Plotly.relayout(plotDiv, {{ 'annotations[0].text': statusText }});
 }}
@@ -166,6 +233,11 @@ function openControlsWindow() {{
 
 openControlsBtn.addEventListener('click', openControlsWindow);
 setTimeout(openControlsWindow, 150);
+amp.input.addEventListener('input', updatePlot);
+angle.input.addEventListener('input', updatePlot);
+phase.input.addEventListener('input', updatePlot);
+
+updatePlot();
 """
 
 
@@ -174,6 +246,8 @@ def parse_args():
     parser.add_argument("--amplitude", type=float, default=0.05, help="Initial amplitude value.")
     parser.add_argument("--angle", type=float, default=float(np.pi), help="Initial angle in radians.")
     parser.add_argument("--phase", type=float, default=float(np.pi / 2), help="Initial phase in radians.")
+    parser.add_argument("--width", type=int, default=DEFAULT_PLOT_WIDTH, help="Plot width in pixels.")
+    parser.add_argument("--height", type=int, default=DEFAULT_PLOT_HEIGHT, help="Plot height in pixels.")
     parser.add_argument(
         "--output",
         type=str,
@@ -204,6 +278,8 @@ def main():
 
     fig.update_layout(
         title="Developable surface",
+        width=args.width,
+        height=args.height,
         margin=dict(l=20, r=20, b=20, t=70),
         scene=dict(
             xaxis_title="x",
@@ -238,27 +314,29 @@ def main():
         include_plotlyjs="cdn",
         full_html=False,
         post_script=build_post_script(U, V),
-        default_width="100vw",
-        default_height="100vh",
+        default_width=f"{args.width}px",
+        default_height=f"{args.height}px",
     )
 
-    full_screen_html = f"""<!DOCTYPE html>
+    centered_html = f"""<!DOCTYPE html>
 <html lang=\"en\">
 <head>
   <meta charset=\"utf-8\" />
   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />
   <title>Developable surface</title>
   <style>
-    html, body {{
-      width: 100%;
-      height: 100%;
+    body {{
       margin: 0;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       background: #ffffff;
-      overflow: hidden;
     }}
     .plot-wrap {{
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
     }}
   </style>
 </head>
