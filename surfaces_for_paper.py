@@ -206,9 +206,9 @@ def main():
         title="Developable surface",
         margin=dict(l=20, r=20, b=20, t=70),
         scene=dict(
-            xaxis_title="x",
-            yaxis_title="y",
-            zaxis_title="z",
+            xaxis_title="x (m)",
+            yaxis_title="y (m)",
+            zaxis_title="z (m)",
             zaxis=dict(
                 range=[
                     -(MAX_AMPLITUDE_FOR_Z_SCALE + Z_AXIS_MARGIN),
@@ -228,7 +228,7 @@ def main():
                 xref="paper",
                 yref="paper",
                 showarrow=False,
-                font=dict(size=14),
+                font=dict(size=38, family="Times New Roman"),
             )
         ],
     )
